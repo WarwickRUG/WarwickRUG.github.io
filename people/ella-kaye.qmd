@@ -1,0 +1,15 @@
+---
+title: "Ella Kaye"
+format: html
+image: ../media/ella_profile.jpeg
+about:
+  template: solana
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: globe
+      text: Website
+      href: https://ellakaye.co.uk
+  
+editor: visual
+---

@@ -5,5 +5,7 @@
 
 # Deployed website folder.
 docs/
+_site/
 
-**/.DS_Store
+.DS_Store
+/.quarto/

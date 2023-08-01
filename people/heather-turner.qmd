@@ -1,0 +1,18 @@
+---
+title: "Heather Turner"
+format: html
+image: ../media/heather_turner.jpg
+about:
+  template: solana
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/jamestripp
+    - icon: web
+      text: Website
+      href: https://warwick.ac.uk/heatherturner
+  
+editor: visual
+---

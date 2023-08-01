@@ -1,0 +1,15 @@
+---
+title: "James Tripp"
+format: html
+image: https://avatars.githubusercontent.com/u/5781056?v=4
+about:
+  template: solana
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/jamestripp
+  
+editor: visual
+---

@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "Warwick R-User Group"
+  image: "media/logo_small_white.png"
+  # favicon: "favicon.png"
+  reader-mode: true
+  search: true
+  repo-url: https://github.com/WarwickRUG/WarwickRUG.github.io
+  repo-actions: [edit, issue]
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+    tools:
+      - icon: mastodon
+        href: https://fosstodon.org/@WarwickRUG
+      - icon: twitter
+        href: https://twitter.com
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/WarwickRUG/WarwickRUG.github.io
+          - text: Report a Bug
+            url:  https://github.com/WarwickRUG/WarwickRUG.github.io/issues
+      - icon: calendar
+        href: https://meetup.com/warwickrug/
+format:
+  html:
+    theme: cosmo
+    css: css/wrug.scss
+    toc: true
