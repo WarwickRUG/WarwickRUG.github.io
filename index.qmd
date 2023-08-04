@@ -24,7 +24,7 @@ Warwick R-user group is for everybody interested in R, the programming language 
 
 Warwick R User Group meets every 2 months to discuss R-related topics. At each session, speakers present interesting R packages (and how to make your own), share tips and tricks and offer advice to new R users.
 
-Everyone is welcome, regardless of R programming experience, from across or outside Warwick University. For further information, visit our [Meetup.com](https://www.meetup.com/WarwickRUG) page or contact a member of the [WRUG committee](about#committee).
+Everyone is welcome, regardless of R programming experience, from across or outside Warwick University. For further information, visit our [Meetup.com](https://www.meetup.com/WarwickRUG) page or contact a member of the [WRUG committee](about.html#committee).
 
 ---
 
