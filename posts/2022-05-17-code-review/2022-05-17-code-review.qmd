@@ -1,0 +1,14 @@
+---
+title: "Code Review"
+categories:
+  - talks
+  - reviews
+author:
+  - name: Iain Emsley
+date: 2022-05-25
+draft: false
+---
+
+## Resources:
+
+-   [Talk slides](resources/Code_Review.pdf)

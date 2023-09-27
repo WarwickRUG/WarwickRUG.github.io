@@ -1,0 +1,26 @@
+---
+title: "Interactive Data Visualisation"
+description: |
+  Using {htmlwidgets} with/without {shiny} in reproducible Open Data workflows.
+author:
+  - name: Charlie Hadley
+    url: https://visibledata.co.uk/
+date: 2023-05-16
+categories:
+  - talks
+  - dataviz
+  - reproducibility
+  - shiny
+image: packages.jpeg
+draft: false
+---
+
+In this talk I introduce {htmlwidgets} - the collection of packages you wish you knew. With these packages you can create interactive charts, graphs, tables and maps all in R without needing to learn any JavaScript.
+
+On top of {htmlwidgets}, I will also demonstrate the fundamentals of using {shiny} to build server applications all with R - and show how to combine these with {htmlwidgets} to build impressive and beautiful tools.
+
+I have a background in reproducible research methodologies, so I will talk about how you can use these tools to create an end-to-end reproducible Open Data workflow. The same workflow used by the University of Oxford's Interactive Data Network that I helped launch.
+
+## Resources
+
+ * [GitHub repository](https://github.com/charliejhadley/talk_2023-05-16_rug-warwick_interactive-data-viz){target="\_blank"} - slides and example code.

@@ -1,0 +1,29 @@
+---
+title: "R and Docker"
+description: |
+  In this online event, we continue the reproducibility theme from our last meetup, with James Tripp introducing Docker containers and how they can be used with R. See full details below.
+author:
+  - name: James Tripp
+    url: https://jamestripp.net
+    orcid_id: 0000-0003-2471-3411
+date: 2022-09-15
+categories:
+  - talks
+  - reproducibility
+image: figure.png
+draft: false
+---
+
+In this online event, we continue the reproducibility theme from our last meetup, with James Tripp introducing Docker containers and how they can be used with R. See full details below.
+
+**Speaker**
+James Tripp, Senior Research Software Engineer, Information and Digital Group, University of Warwick
+
+**Abstract**
+Docker is a container technology which allows you to specify and build a compute environment. You can run the environment on your local machine and both the instructions for creating the environment and the environment itself can be shared. In this talk I will (a) introduce containers, (b) discuss a worked examples of using Docker with R, and (c) consider how containers can help us do better research. Hopefully this presentation will help those of you who have never used Docker to consider if you want to use Docker in your own work and where to start.
+
+
+## Resources
+
+* [Slides](https://jamestripp.github.io/RandDocker/){target="_blank"}
+* [Source code](https://github.com/jamestripp/RandDocker){target="_blank"}
