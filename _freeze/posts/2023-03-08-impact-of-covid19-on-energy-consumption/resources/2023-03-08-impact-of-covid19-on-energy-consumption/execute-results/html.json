@@ -1,0 +1,14 @@
+{
+  "hash": "a79295a9a58171bc0fb0ab4d2f3d899b",
+  "result": {
+    "markdown": "---\ntitle: \"COVID-19 Paper Figures\"\nauthor: \"Ellen Zapata-Webborn\"\ndate: \"2023-09-27\"\noutput: word_document\n---\n\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
