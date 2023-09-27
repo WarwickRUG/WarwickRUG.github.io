@@ -9,6 +9,11 @@ output:
     toc_collapsed: true
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE) # Comment this to evaluate the code cells.
+```
+
+
 # Scraping with rvest
 
 Take a look at the movie [SpaceJam on IMDB](https://www.imdb.com/title/tt0117705/). We want to collect its reviews. 

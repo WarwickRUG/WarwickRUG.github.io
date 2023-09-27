@@ -1,0 +1,938 @@
+---
+title: "COVID-19 Paper Figures"
+author: "Ellen Zapata-Webborn"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      include = FALSE,
+                      eval = FALSE, # Comment line to run the code cells.
+                      dpi = 300,
+                      fig.height = 3, fig.width = 6.5)
+
+library(data.table)
+library(ggplot2)
+library(ggpubr)
+library(forcats)
+
+lockdown_colour <- "orange"
+lockdown_1 <- c(as.Date("2020-04-01"),
+                as.Date("2020-06-15"))
+lockdown_2 <- c(as.Date("2020-11-05"),
+                as.Date("2020-12-02"))
+lockdown_3 <- c(as.Date("2021-01-06"),
+                as.Date("2021-03-08"))
+all_restrictions_end <- as.Date("2021-07-19")
+
+myFont <- "serif"
+font.size = 13
+my_linewidth <- 0.8
+obs_elec_col <- "#8A51A5"
+pred_elec_col <- "#9AB4D6"
+obs_gas_col <- "#2072B1"
+pred_gas_col <- "#73C8BD"
+change_col <- "#8C8C8C"
+
+theme_set(theme_light(base_family = myFont))
+update_geom_defaults("text", list(family = theme_get()$text$family))
+
+
+```
+
+```{r dataLoading}
+
+data_folder <- "C:/Users/ucbqeew/University College London/SERL - General/SERL UCL internal/Research/Project VENICE (WPD)/UCL paper/Figures/"
+
+setwd(data_folder)
+
+elec_model_accuracy <- fread("elec_model_accuracy.csv")
+gas_model_accuracy <- fread("gas_model_accuracy.csv")
+elec_model_counts <- fread("elec_model_counts.csv")
+gas_model_counts <- fread("gas_model_counts.csv")
+
+region_counts <- fread("region_counts.csv")
+epc_counts <- fread("epc_counts.csv")
+imd_counts <- fread("imd_counts.csv")
+
+overall_weekend_weekday_monthly_percentiles <- fread("overall_weekend_weekday_monthly_percentiles.csv")
+overall_monthly_percentiles <- fread("overall_monthly_percentiles.csv")
+quarterly_means <- fread("quarterly_means.csv")
+annual_means <- fread("annual_means.csv")
+
+family_status <- fread("family_status.csv")
+financial_wellbeing <- fread("financial_wellbeing.csv")
+epc <- fread("epc_predictions.csv")
+```
+
+
+```{r plotAppearanceFunctions}
+
+add_plot_theme <- function(my_plot) {
+  return(
+    my_plot +
+      theme(
+        legend.position = "bottom",
+        text = element_text(size = font.size),
+        panel.border = element_blank()
+      )
+  )
+}
+
+add_lockdown_shading <- function(p) {
+  p <- p + annotate(
+    geom = "rect",
+    xmin = lockdown_1[1],
+    xmax = lockdown_1[2],
+    ymin = -Inf,
+    ymax = Inf,
+    fill = lockdown_colour,
+    alpha = 0.3
+  ) +
+    annotate(
+      geom = "rect",
+      xmin = lockdown_1[2],
+      xmax = lockdown_2[1],
+      ymin = -Inf,
+      ymax = Inf,
+      fill = lockdown_colour,
+      alpha = 0.1
+    ) +
+    annotate(
+      geom = "rect",
+      xmin = lockdown_2[1],
+      xmax = lockdown_2[2],
+      ymin = -Inf,
+      ymax = Inf,
+      fill = lockdown_colour,
+      alpha = 0.3
+    ) +
+    annotate(
+      geom = "rect",
+      xmin = lockdown_2[2],
+      xmax = lockdown_3[1],
+      ymin = -Inf,
+      ymax = Inf,
+      fill = lockdown_colour,
+      alpha = 0.1
+    ) +
+    annotate(
+      geom = "rect",
+      xmin = lockdown_3[1],
+      xmax = lockdown_3[2],
+      ymin = -Inf,
+      ymax = Inf,
+      fill = lockdown_colour,
+      alpha = 0.3
+    ) +
+    annotate(
+      geom = "rect",
+      xmin = lockdown_3[2],
+      xmax = all_restrictions_end,
+      ymin = -Inf,
+      ymax = Inf,
+      fill = lockdown_colour,
+      alpha = 0.1
+    )
+}
+
+format_monthly_x_axis <- function(p) {
+  p <- p + scale_x_continuous(
+    breaks = seq(as.Date("2020-04-01"),
+                 as.Date("2022-01-01"),
+                 length.out = 8),
+    labels = c(
+      "Apr-20",
+      "Jul-20",
+      "Oct-20",
+      "Jan-21",
+      "Apr-21",
+      "Jul-21",
+      "Oct-21",
+      "Jan-22"
+    ),
+    minor_breaks = seq(as.Date("2020-04-01"),
+                       as.Date("2022-01-01"),
+                       length.out = 22)
+  ) +
+    xlab("Month-Year")
+}
+
+format_quarterly_x_axis <- function(p) {
+  p <- p + scale_x_continuous(
+    breaks = seq(as.Date("2020-04-01"),
+                 as.Date("2022-01-01"),
+                 length.out = 8),
+    labels = c(
+      "Apr-Jun \n2020",
+      "Jul-Sep \n2020",
+      "Oct-Dec \n2020",
+      "Jan-Mar \n2021",
+      "Apr-Jun \n2021",
+      "Jul-Sep \n2021",
+      "Oct-Dec \n2021",
+      "Jan-Mar \n2022"
+    ),
+    minor_breaks = NULL
+  ) +
+    xlab("")
+}
+
+```
+
+
+```{r plottingFunctions}
+
+
+# Overall change in kWh
+
+plot_overall_pred_obs <- function(this_fuel) {
+  
+  p <- ggplot(overall_monthly_percentiles[variable != "perc_obs_minus_pred_kWh" & 
+                                     fuel == this_fuel & 
+                                     percentile == "50%"],
+       aes(x = date,
+           y = approx,
+           colour = factor(variable,
+                           levels = c("observed_mean_energy_kWh",
+                                      "predicted_mean_energy_kWh",
+                                      "obs_minus_pred_kWh"))))
+  p <- add_lockdown_shading(p)
+  p <- p + 
+      geom_point() + 
+      geom_line(aes(group = factor(variable,
+                    levels = c("observed_mean_energy_kWh",
+                                      "predicted_mean_energy_kWh",
+                                      "obs_minus_pred_kWh"))),
+               size = my_linewidth) +
+      geom_hline(yintercept = 0)
+  
+  if(this_fuel == "elec") {
+    p <- p + scale_colour_manual(values = c(obs_elec_col,
+                                            pred_elec_col,
+                                            change_col),
+                                 name = "",
+                                 breaks = c("observed_mean_energy_kWh",
+                                            "predicted_mean_energy_kWh",
+                                            "obs_minus_pred_kWh"),
+                                 labels = c("Observations",
+                                            "Counterfactuals",
+                                            "Observations minus counterfactuals")) + 
+      ylab("Median household mean daily \nelectricity consumption (kWh)")
+  } else {
+    p <- p + scale_colour_manual(values = c(obs_gas_col,
+                                 pred_gas_col,
+                                 change_col),
+                      name = "",
+                      breaks = c("observed_mean_energy_kWh",
+                                 "predicted_mean_energy_kWh",
+                                 "obs_minus_pred_kWh"),
+                      labels = c("Observations",
+                                 "Counterfactuals",
+                                 "Observations minus counterfactuals")) + 
+      ylab("Median household mean daily \ngas consumption (kWh)")
+  }
+  p <- format_monthly_x_axis(p)
+  
+  return(add_plot_theme(p))
+
+}
+
+
+
+
+plot_change_iqr <- function(this_fuel,
+                            units = "kWh") {
+  if (this_fuel == "elec") {
+    main_colour <- obs_elec_col
+    f <- "electricity"
+  } else {
+    main_colour <- obs_gas_col
+    f <- "gas"
+  }
+  
+  if (units == "kWh") {
+    var <- "obs_minus_pred_kWh"
+  } else {
+    var <- "perc_obs_minus_pred_kWh"
+  }
+  
+  p <- ggplot(wide_monthly_changes[fuel == this_fuel &
+                                     variable == var],
+              aes(x = date))
+  p <- add_lockdown_shading(p)
+  p <- p +
+    geom_line(
+      aes(y = `25%`,
+          group = fuel),
+      colour = main_colour,
+      alpha = 0.5,
+      size = my_linewidth
+    ) +
+    geom_line(aes(y = `50%`,
+                  group = fuel),
+              colour = main_colour,
+              size = my_linewidth) +
+    geom_line(
+      aes(y = `75%`,
+          group = fuel),
+      colour = main_colour,
+      alpha = 0.5,
+      size = my_linewidth
+    ) +
+    ylab(paste0("Mean daily change in \n", f, " consumption (", units, ")")) +
+    geom_hline(yintercept = 0)
+  
+  p <- format_monthly_x_axis(p)
+  return(add_plot_theme(p))
+}
+
+
+plot_quarterly_weekend_weekday <- function(this_fuel) {
+  
+  if(this_fuel == "elec") {
+    c_obs <- obs_elec_col
+    c_pred <- pred_elec_col
+    f <- "electricity"
+  } else {
+    c_obs <- obs_gas_col
+    c_pred <- pred_gas_col
+    f <- "gas"
+  }
+  
+  p <- ggplot(quarterly_weekend_weekday_monthly_percentiles[variable %in% c("observed_mean_energy_kWh",
+                                                                   "predicted_mean_energy_kWh")  & 
+                                     fuel == this_fuel & 
+                                     percentile == "50%"],
+       aes(x = fct_reorder(factor(quarter_name),
+                           quarter),
+           y = approx,
+           fill = factor(variable,
+                           levels = c("observed_mean_energy_kWh",
+                                      "predicted_mean_energy_kWh")))) + 
+    geom_bar_pattern(stat = "identity",
+                   position = "dodge",
+                   aes(pattern = weekend),
+                   pattern_density = 0.3,
+                   pattern_colour = "grey",
+                   pattern_fill = "grey") + 
+    theme(legend.position = "bottom") + 
+    facet_wrap(~financeYear) +
+    xlab("Quarter") + 
+    ylab(paste0("Median household mean daily \n", f, " consumption (kWh)")) +
+    scale_pattern_manual(values = c('none', 'circle'),
+                         name = "",
+                         breaks = c("FALSE", "TRUE"),
+                         labels = c("Weekdays", "Weekends")) + 
+    scale_fill_manual(values = c(c_obs, c_pred),
+                     name = "",
+                     breaks = c("observed_mean_energy_kWh",
+                                 "predicted_mean_energy_kWh"),
+                      labels = c("Observations",
+                                 "Counterfactuals"))
+  
+  return(add_plot_theme(p))
+}
+
+plot_weekend_ratio <- function(this_fuel) {
+  
+    if(this_fuel == "elec") {
+    c_obs <- obs_elec_col
+    c_pred <- pred_elec_col
+    f <- "Electricity"
+  } else {
+    c_obs <- obs_gas_col
+    c_pred <- pred_gas_col
+    f <- "Gas"
+  }
+  
+  p <- ggplot(wide_weekend_weekday[fuel == this_fuel & 
+                                     variable %in% c("observed_mean_energy_kWh",
+                                 "predicted_mean_energy_kWh")],
+              aes(x = fct_reorder(factor(quarter_name),
+                           quarter),
+                  y = perc_diff,
+                  colour = variable)) + 
+    geom_point() + 
+    scale_colour_manual(values = c(c_obs, c_pred),
+                     name = "",
+                     breaks = c("observed_mean_energy_kWh",
+                                 "predicted_mean_energy_kWh"),
+                      labels = c("Observations",
+                                 "Counterfactuals")) +
+    theme(legend.position = "bottom") + 
+    facet_wrap(~financeYear) +
+    xlab("Quarter") + 
+    ylab(paste0(f, " weekend demand / weekday demand (%)")) + 
+    ylim(c(90, 120)) +
+    geom_hline(yintercept = 100)
+  
+  return(add_plot_theme(p))
+}
+
+plot_survey_changes <- function(dt = financial_wellbeing_quarterly[financial_wellbeing != "no response"], 
+                                survey_colname = "financial_wellbeing",
+                                legend_name = "Financial wellbeing",
+                                this_fuel = "elec", 
+                                units = "kWh",
+                                break_vals = c("high", "low", "no response"),
+                                break_labels = c("High", "Low", "No response")) {
+  if(this_fuel == "elec") {
+    col_main <- obs_elec_col
+    f <- "electricity"
+  } else {
+    col_main <- obs_gas_col
+    f <- "gas"
+  }
+  
+  if(units == "kWh") {
+    var <- "obs_minus_pred_kWh"
+  } else {
+    var <- "perc_obs_minus_pred_kWh"
+  }
+  
+  n <- nrow(dt[, .N, by = get(survey_colname)])
+  alpha_vals <- seq(from = 1, to = 0, by = -1 / n)[1:n]
+  
+  p <- ggplot(dt[variable == var  & 
+                   fuel == this_fuel & 
+                   percentile == "50%"],
+       aes(x = date,
+           y = approx,
+           alpha = get(survey_colname))) + 
+         geom_bar(stat = "identity",
+                  position = "dodge",
+                  fill = col_main) + 
+  theme(legend.position = "bottom") + 
+  scale_alpha_manual(values = alpha_vals,
+                      name = legend_name,
+                     breaks = break_vals,
+                     labels = break_labels) + 
+    ylab(paste0("Median household mean daily \nchange in ", f, " consumption (",
+    units,")"))
+  
+  p <- format_quarterly_x_axis(p)
+  p <- add_plot_theme(p)
+}
+
+
+
+plot_overall_accuracy <- function() {
+  p <-  p <- ggplot(model_accuracy[m_name == "Overall"]) +
+    geom_boxplot(
+      outlier.shape = NA,
+      aes(
+        fill = fuel,
+        x = variable,
+        ymin = vlow,
+        lower = low,
+        middle = med,
+        upper = high,
+        ymax = vhigh
+      ),
+      stat = "identity",
+      width = 0.5
+    ) + 
+    ylim(-10, 20) + 
+    geom_segment(aes(x = 0.7, y = 15, xend = 1.3, yend = 15), linetype = 2) +
+    geom_segment(aes(x = 0.7, y = 0, xend = 1.3, yend = 0), linetype = 1) +
+    geom_segment(aes(x = 1.7, y = 5, xend = 2.3, yend = 5), linetype = 2) +
+    geom_segment(aes(x = 1.7, y = -5, xend = 2.3, yend = -5), linetype = 2) +
+    scale_fill_manual(values = c(obs_elec_col, obs_gas_col),
+                     name = "",
+                     breaks = c("elec",
+                                 "gas"),
+                      labels = c("Electricity",
+                                 "Gas")) +
+    theme(legend.position = "bottom",
+          panel.border = element_blank(),
+          axis.title.x = element_blank()) + 
+    ylab("%") 
+  return(add_plot_theme(p))
+}
+
+
+
+
+plot_monthly_accuracy <- function(var = "CV(RMSE)") {
+  p <- ggplot(model_accuracy[variable == var]) + 
+    geom_hline(yintercept = 0, colour = "darkgrey") +
+    geom_boxplot(
+      outlier.shape = NA,
+      aes(
+        fill = fuel,
+        x = fct_reorder(factor(m_name),
+                           month),
+        ymin = vlow,
+        lower = low,
+        middle = med,
+        upper = high,
+        ymax = vhigh
+      ),
+      stat = "identity",
+      width = 0.75
+    ) +
+    scale_fill_manual(values = c(obs_elec_col, obs_gas_col),
+                     name = "",
+                     breaks = c("elec",
+                                 "gas"),
+                      labels = c("Electricity",
+                                 "Gas")) +
+    theme(legend.position = "bottom",
+          panel.border = element_blank()) + 
+    xlab("Month") + 
+    ylab(paste0(var, " (%)")) 
+  
+  return(add_plot_theme(p))
+}
+
+
+plot_monthly_accuracy <- function(var = "CV(RMSE)") {
+  
+  fuels <- c("Electricity", "Gas")
+  names(fuels) <- c("elec", "gas")
+  p <- ggplot(model_accuracy[month != 0 & variable == var]) + 
+    geom_hline(yintercept = 0, colour = "darkgrey") +
+    geom_boxplot(
+      outlier.shape = NA,
+      aes(
+        fill = fuel,
+        x = fct_reorder(factor(m_name),
+                           month),
+        ymin = vlow,
+        lower = low,
+        middle = med,
+        upper = high,
+        ymax = vhigh
+      ),
+      stat = "identity",
+      width = 0.75
+    ) +
+    scale_fill_manual(values = c(obs_elec_col, obs_gas_col),
+                     name = "",
+                     breaks = c("elec",
+                                 "gas"),
+                      labels = c("Electricity",
+                                 "Gas")) +
+    theme(legend.position = "bottom",
+          panel.border = element_blank()) + 
+    xlab("Month") + 
+    ylab(paste0(var, " (%)")) +
+    facet_wrap(~fuel,
+               labeller = labeller(fuel = fuels))
+  
+  return(add_plot_theme(p))
+}
+
+
+```
+
+
+```{r overall}
+overall_monthly_percentiles[, date := as.Date(paste0(year, "-", month, "-01"))]
+
+elec_overall_pred_obs <- plot_overall_pred_obs("elec")
+gas_overall_pred_obs <- plot_overall_pred_obs("gas")
+
+```
+
+```{r include = TRUE}
+elec_overall_pred_obs
+```
+
+
+```{r include = TRUE}
+gas_overall_pred_obs
+```
+
+```{r changes_iqr}
+
+wide_monthly_changes <- dcast(overall_monthly_percentiles[variable %in% c("obs_minus_pred_kWh",
+                                                                          "perc_obs_minus_pred_kWh")],
+                              formula = variable + year + month + financeYear + month_pos + fuel  ~ percentile,
+                              value.var = "approx")
+
+wide_monthly_changes[, date := as.Date(paste0(year, "-", month, "-01"))]
+
+
+
+elec_change_iqr <- plot_change_iqr("elec", "kWh")
+elec_perc_change_iqr <- plot_change_iqr("elec", "%")
+
+gas_change_iqr <- plot_change_iqr("gas", "kWh")
+gas_perc_change_iqr <- plot_change_iqr("gas", "%")
+```
+
+```{r include = TRUE, fig.height=2.2}
+elec_change_iqr
+elec_perc_change_iqr
+```
+
+
+```{r include = TRUE, fig.height=2.2}
+gas_change_iqr
+gas_perc_change_iqr
+```
+
+
+
+```{r weekendsWeekdays}
+
+overall_weekend_weekday_monthly_percentiles[, quarter := ceiling(month/3)]
+quarterly_weekend_weekday_monthly_percentiles <- overall_weekend_weekday_monthly_percentiles[, mean(approx),
+                                                                                             keyby = .(year, 
+                                                                                                       quarter, 
+                                                                                                       fuel, 
+                                                                                                       weekend, 
+                                                                                                       variable,
+                                                                                                       percentile)]
+setnames(quarterly_weekend_weekday_monthly_percentiles, "V1", "approx")
+
+quarter_names <- data.table(quarter = 1:4,
+                            quarter_name = c("Jan - Mar",
+                                             "Apr - Jun",
+                                             "Jul - Sep",
+                                             "Oct - Dec"),
+                            month_day = c("01-01", "04-01", "07-01", "10-01"))
+quarterly_weekend_weekday_monthly_percentiles <- quarter_names[quarterly_weekend_weekday_monthly_percentiles, 
+                                                               on = "quarter"]
+
+
+weekend_weekday_perc_change <- dcast(quarterly_weekend_weekday_monthly_percentiles[percentile == "50%"],
+                                     year + quarter + month_day + quarter_name + fuel + weekend ~ variable,
+                                     value.var = "approx")
+weekend_weekday_perc_change[, date := as.Date(paste0(year, "-", month_day))]
+
+
+plot_weekend_change <- function(this_fuel, 
+                                units = "kWh") {
+  
+  if(this_fuel == "elec") {
+    c_obs <- obs_elec_col
+    c_pred <- pred_elec_col
+    f <- "electricity"
+  } else {
+    c_obs <- obs_gas_col
+    c_pred <- pred_gas_col
+    f <- "gas"
+  }
+  
+  if(units == "kWh") {
+    y_var <- "obs_minus_pred_kWh"
+  } else {
+    y_var <- "perc_obs_minus_pred_kWh"
+  }
+  
+  p <- ggplot(weekend_weekday_perc_change[fuel == this_fuel],
+              aes(x = date,
+                  y = get(y_var),
+                  alpha = weekend)) + 
+    geom_bar(stat = "identity", 
+             position = "dodge",
+                  fill = c_obs) + 
+    scale_alpha_manual(values = c(1, 0.5),
+                     name = "",
+                     breaks = c("FALSE",
+                                 "TRUE"),
+                      labels = c("Weekdays",
+                                 "Weekends")) +
+    theme(legend.position = "bottom") + 
+    ylab(paste0("Change in mean daily ", f, " demand (", units, ")")) 
+  
+  p <- format_quarterly_x_axis(p)
+  p <- add_plot_theme(p)
+}
+
+elec_weekend_change <- plot_weekend_change("elec")
+gas_weekend_change <- plot_weekend_change("gas")
+
+elec_weekend_perc_change <- plot_weekend_change("elec", units = "%")
+gas_weekend_perc_change <- plot_weekend_change("gas", units = "%")
+
+```
+
+
+```{r, include = TRUE}
+elec_weekend_change
+gas_weekend_change
+elec_weekend_perc_change
+gas_weekend_perc_change
+```
+
+
+
+
+
+
+```{r financialWellbeing}
+
+# financeYearInfo <- unique(overall_monthly_percentiles, by = c("year", "month", "financeYear", "month_pos"))[, c("year", "month", "financeYear", "month_pos")]
+# 
+# financial_wellbeing <- financeYearInfo[financial_wellbeing, on = c("year", "month")]
+
+financial_wellbeing[, quarter := ceiling(month / 3)]
+financial_wellbeing_quarterly <- financial_wellbeing[, mean(approx), 
+                                                     keyby = .(year, quarter, fuel,     
+                                                               variable, percentile, financial_wellbeing)]
+setnames(financial_wellbeing_quarterly, "V1", "approx")
+financial_wellbeing_quarterly[financial_wellbeing == "", financial_wellbeing := "no response"]
+
+financial_wellbeing_quarterly <- quarter_names[financial_wellbeing_quarterly, on = "quarter"]
+financial_wellbeing_quarterly[, date := as.Date(paste0(year, "-", month_day))]
+
+
+elec_finance_wellbeing_kWh <- plot_survey_changes()
+elec_finance_wellbeing_perc <- plot_survey_changes(units = "%")
+gas_finance_wellbeing_kWh <- plot_survey_changes(this_fuel = "gas")
+gas_finance_wellbeing_perc <- plot_survey_changes(this_fuel = "gas",
+                                                 units = "%")
+
+```
+
+```{r include = TRUE, fig.height = 2.9}
+elec_finance_wellbeing_kWh
+elec_finance_wellbeing_perc
+gas_finance_wellbeing_kWh
+gas_finance_wellbeing_perc
+```
+
+```{r familyStatus}
+
+family_status[, quarter := ceiling(month / 3)]
+family_status_quarterly <- family_status[, mean(approx), 
+                                                     keyby = .(year, quarter, fuel,     
+                                                               variable, percentile, family_status)]
+setnames(family_status_quarterly, "V1", "approx")
+family_status_quarterly <- quarter_names[family_status_quarterly, on = "quarter"]
+family_status_quarterly[, date := as.Date(paste0(year, "-", month_day))]
+
+
+family_status_quarterly[, family_status := factor(family_status,
+                                                  levels = c("Children", 
+                                                             "Workers without children", 
+                                                             "No workers no children"))]
+
+elec_family_status_kWh <- plot_survey_changes(dt = family_status_quarterly,
+                                              survey_colname = "family_status",
+                                              legend_name = "",
+                                              break_vals = c("Children", 
+                                                             "Workers without children", 
+                                                             "No workers no children"),
+                                              break_labels = c("Children present",
+                                                               "Adults in work & no children",
+                                                               "No adults in work & no children"),
+                                              units = "kWh",
+                                              this_fuel = "elec")
+
+elec_family_status_perc <- plot_survey_changes(dt = family_status_quarterly,
+                                              survey_colname = "family_status",
+                                              legend_name = "",
+                                              break_vals = c("Children", 
+                                                             "Workers without children", 
+                                                             "No workers no children"),
+                                              break_labels = c("Children present",
+                                                               "Adults in work & no children",
+                                                               "No adults in work & no children"),
+                                              units = "%",
+                                              this_fuel = "elec")
+
+gas_family_status_kWh <- plot_survey_changes(dt = family_status_quarterly,
+                                              survey_colname = "family_status",
+                                              legend_name = "",
+                                              break_vals = c("Children", 
+                                                             "Workers without children", 
+                                                             "No workers no children"),
+                                              break_labels = c("Children present",
+                                                               "Adults in work & no children",
+                                                               "No adults in work & no children"),
+                                              units = "kWh",
+                                              this_fuel = "gas")
+
+gas_family_status_perc <- plot_survey_changes(dt = family_status_quarterly,
+                                              survey_colname = "family_status",
+                                              legend_name = "",
+                                              break_vals = c("Children", 
+                                                             "Workers without children", 
+                                                             "No workers no children"),
+                                              break_labels = c("Children present",
+                                                               "Adults in work & no children",
+                                                               "No adults in work & no children"),
+                                              units = "%",
+                                              this_fuel = "gas")
+
+
+```
+```{r include = TRUE, fig.height = 2.9}
+elec_family_status_kWh
+elec_family_status_perc
+gas_family_status_kWh
+gas_family_status_perc
+```
+
+
+```{r EPC}
+
+epc[, quarter := ceiling(month / 3)]
+epc_quarterly <- epc[, mean(approx), 
+                     keyby = .(year, quarter, fuel,   
+                               variable, percentile, joined_bands)]
+setnames(epc_quarterly, "V1", "approx")
+epc_quarterly <- quarter_names[epc_quarterly, on = "quarter"]
+epc_quarterly[, date := as.Date(paste0(year, "-", month_day))]
+
+
+elec_epc_kWh <- plot_survey_changes(dt = epc_quarterly[joined_bands != ""],
+                                              survey_colname = "joined_bands",
+                                              legend_name = "EPC band",
+                                              break_vals = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              break_labels = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              units = "kWh",
+                                              this_fuel = "elec")
+
+
+elec_epc_perc <- plot_survey_changes(dt = epc_quarterly[joined_bands != ""],
+                                              survey_colname = "joined_bands",
+                                              legend_name = "EPC band",
+                                              break_vals = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              break_labels = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              units = "%",
+                                              this_fuel = "elec")
+
+gas_epc_kWh <- plot_survey_changes(dt = epc_quarterly[joined_bands != ""],
+                                              survey_colname = "joined_bands",
+                                              legend_name = "EPC band",
+                                              break_vals = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              break_labels = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              units = "kWh",
+                                              this_fuel = "gas")
+
+
+gas_epc_perc <- plot_survey_changes(dt = epc_quarterly[joined_bands != ""],
+                                              survey_colname = "joined_bands",
+                                              legend_name = "EPC band",
+                                              break_vals = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              break_labels = c("B", 
+                                                             "C", 
+                                                             "D",
+                                                             "E/F/G"),
+                                              units = "%",
+                                              this_fuel = "gas")
+
+
+```
+
+```{r include = TRUE, fig.height = 2.9}
+elec_epc_kWh
+elec_epc_perc
+gas_epc_kWh
+gas_epc_perc
+```
+
+
+```{r modelAccuracy}
+
+# geom_boxplot(outlier.shape = NA,
+# aes(x = factor(month),
+# ymin = vlow, 5%
+# lower = low, 25%
+# middle = mid, 50%
+# upper = high, 75%
+# ymax = vhigh), 95%
+# stat = "identity",
+# width = 0.5) + 
+# geom_hline(yintercept = 0)
+
+elec_model_accuracy[, fuel := "elec"]
+gas_model_accuracy[, fuel := "gas"]
+model_accuracy <- rbind(elec_model_accuracy,
+                        gas_model_accuracy)
+model_accuracy[month == "Overall", month := 0]
+model_accuracy[, month := as.integer(month)]
+
+# Month names
+month_names <- data.table(month = 0:12,
+                          m_name = c("Overall", month.abb))
+
+model_accuracy <- month_names[model_accuracy, on = "month"]
+model_accuracy[variable == "cv_rmse", variable := "CV(RMSE)"]
+model_accuracy[variable == "nmbe", variable := "NMBE"]
+  
+overall_accuracy <- plot_overall_accuracy()
+cvrmse_monthly <- plot_monthly_accuracy("CV(RMSE)")
+nmbe_monthly <- plot_monthly_accuracy("NMBE")
+
+
+
+
+```
+
+```{r fig.width = 3.5, include = TRUE}
+overall_accuracy
+```
+
+```{r, fig.height = 4, include = TRUE}
+cvrmse_monthly
+nmbe_monthly
+```
+
+
+
+```{r stats, include = TRUE}
+
+overall_monthly_percentiles[, quarter := floor(month_pos / 4) + 1]
+overall_monthly_percentiles <- quarter_names[overall_monthly_percentiles, on = "quarter"]
+
+quarterly_changes <- overall_monthly_percentiles[percentile == "50%" & 
+                                                   variable %in% c("obs_minus_pred_kWh",
+                                                                   "perc_obs_minus_pred_kWh"),
+                                                 mean(approx), 
+                                                 keyby = .(fuel, financeYear, quarter, 
+                                                           quarter_name, variable)]
+quarterly_changes[, V1 := round(V1, 1)]
+quarterly_changes <- dcast(quarterly_changes,
+                           fuel + financeYear + quarter + quarter_name ~ variable,
+                           value.var = "V1")
+setnames(quarterly_changes, 
+         c("financeYear",
+           "quarter_name",
+           "obs_minus_pred_kWh",
+           "perc_obs_minus_pred_kWh"),
+         c("Financial year",
+           "Quarter",
+           "Difference (kWh)",
+           "Difference (%)"))
+quarterly_changes[, quarter := NULL]
+knitr::kable(quarterly_changes)
+```
+
+
+```{r representativeness}
+region_counts
+
+imd_counts
+
+epc_counts
+```
+

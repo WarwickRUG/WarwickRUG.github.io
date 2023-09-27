@@ -20,6 +20,7 @@ date: 02-07-2022
 image: "media/logo_small.png"
 categories:
   - announcements
+draft: true
 ---
 
 ```{r setup, include=FALSE}

@@ -9,7 +9,7 @@ date: 2017-01-19
 categories:
   - talks
   - dataviz
-image: resources/emoji_plots.png
+image: emoji_plots.png
 ---
 
 ## Resources:
