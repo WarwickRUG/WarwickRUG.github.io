@@ -4,6 +4,8 @@ project:
 website:
   title: "Warwick R-User Group"
   image: "media/logo_small_white.png"
+  site-url: https://warwickrug.github.io/
+  description: "Warwick R-User Group's official website"
   # favicon: "favicon.png"
   reader-mode: true
   search: true
@@ -14,6 +16,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - blog.qmd
     tools:
       - icon: mastodon
         href: https://fosstodon.org/@WarwickRUG
@@ -27,8 +30,11 @@ website:
             url:  https://github.com/WarwickRUG/WarwickRUG.github.io/issues
       - icon: calendar
         href: https://meetup.com/warwickrug/
+      - icon: rss
+        href: index.xml
 format:
   html:
     theme: cosmo
     css: css/wrug.scss
     toc: true
+    
