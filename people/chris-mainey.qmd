@@ -1,0 +1,28 @@
+---
+title: "Chris Mainey"
+format: html
+image: https://www.mainard.co.uk/author/chris-mainey/avatar_hu0208f0fa48d876a77ce067cc8ef77eee_20273_270x270_fill_q90_lanczos_center.jpg
+about:
+  template: solana
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/chrismainey
+    - icon: web
+      text: Website
+      href: https://www.mainard.co.uk/
+  
+editor: visual
+---
+
+# Biography
+
+Chris Mainey is a data scientist and analytical leader in the UK National Health Service (NHS). He has led analytical teams in Patient Safety at NHSE, national benchmarking at University Hospitals Birmingham and has recently joined the specialist analytics team at North Central London ICB. He has experience in patient safety, public health, clinical networks, acute trust informatics, and leading analytical and data science teams.
+
+Chris\' work focuses on modelling NHS data, with strong expertise in R and SQL, and experience with a variety of statistical modelling and machine learning techniques. He completed his PhD at UCL, on modelling NHS incident reporting data using quantitative methods and NLP/text mining.
+
+Chris is an experienced trainer, presenter, and post-grad teacher, keen on communicating health data, statistics and ML methods to a variety of audiences. He is a member of the NHS-R community Technical Advisory Group, has authored and maintains several R packages, and is keen to promote R awareness and adoption in the NHS, as well as the wider data science skill set.
+
+This is a personal blog/website and does not reflect the opinions of NHS England or any other organisation.
