@@ -5,3 +5,6 @@ freeze: true
 
 # enable banner style title blocks (see https://quarto.org/docs/authoring/title-blocks.html)
 title-block-banner: true
+
+# Adding citeable articles: https://quarto.org/docs/authoring/create-citeable-articles.html
+citation: true
