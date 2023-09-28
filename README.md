@@ -3,13 +3,13 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Warwick R User Group website, created using [`Distill`](https://pkgs.rstudio.com/distill/index.html).
+Warwick R User Group website, created using [`Quarto`](https://quarto.org/).
 
 Some icons obtained from [Reshot](https://www.reshot.com/). 
 
 ## Installation
 
-1. Clone this repo: `git clone git@github.com:WarwickRUG/wrug_website.git`
+1. Clone this repo: `git clone git@github.com:WarwickRUG/WarwickRUG.github.io.git`
 2. Install `renv` if not already installed (instructions [here](https://rstudio.github.io/renv/index.html)).
 2. Run `renv::restore()` to restore the state of your project from `renv.lock`.
 
@@ -25,23 +25,12 @@ Some icons obtained from [Reshot](https://www.reshot.com/).
 
 Add new blog posts
 
-1. Create a new blog post by running `distill::create_post("<date_your title>", draft = TRUE)` where `<date_your title>` will be replaced with an actual date in yyy-mm-dd format and any meaningful title which will be the blog post's url.
-2. Edit content as a regular Rmd file (refer to https://rstudio.github.io/distill/blog.html#creating-a-post for more information)
-3. Once you are happy with the results:
-  1. change `draft = TRUE` to `draft = FALSE` (or just comment the line) so the post can be displayed.
-  2. knit the Rmd file: `knitr::knit(<your filename>)` or use RStudio's interface.
-  
-Edit an existing blog post
 
-1. Edit the desired post within `_posts``folder
-2. Save changes
-3. Knit the file
 
 
 ### Rendering and deploying the website
 
-1. run `rmarkdown::render_site()` to render a local copy of the website. (this will only deploy any rendered site)
-2. website deployment will depend on what we decide in [this issue](https://github.com/WarwickRUG/wrug_website/issues/2)
+TODO: <https://quarto.org/docs/publishing/github-pages.html>
 
 ## Troubleshooting
 
@@ -53,9 +42,6 @@ If facing issues installing packages from Windows, run this command. (more info 
 Sys.setenv(RENV_DOWNLOAD_METHOD = "libcurl")
 ```
 
-### I can't see my updated content
-
-Make sure that you knit your content after editing your `.Rmd` file, otherwise, it will not show in the new site when rendering and deploying the site. The advantage of this approach is that older blog posts don't break if you update your R packages or dependencies and don't want to update the posts. If you don't fancy re-knitting every time you make a change, then you can write an ordinary markdown post
 
 ## Contributors ✨
 
