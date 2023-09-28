@@ -11,7 +11,7 @@
     "href": "about.html#committee",
     "title": "About us",
     "section": "Committee",
-    "text": "Committee\n\n\n\n\n\n\n\n\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\n\nChris Mainey\n\n\n\n\n\n\n\n\n\n\n\n\n\nElla Kaye\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeather Turner\n\n\n\n\n\n\n\n\n\n\n\n\n\nJames Tripp\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Committee\n\n\n\n\n\n\n\n\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\n\nChris Mainey\n\n\n\n\n\n\n\n\n\n\n\n\n\nElla Kaye\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeather Turner\n\n\n\n\n\n\n\n\n\n\n\n\n\nJames Tripp\n\n\n\n\n\n\n\nNo matching items\n\n\n\nFormer members\nWe would like to thank former WRUG committee members (in alphabetical order):\n\nAditi Shenvi\nDavid Selby"
   },
   {
     "objectID": "about.html#support",
@@ -67,14 +67,14 @@
     "href": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/resources/2023-03-08-impact-of-covid19-on-energy-consumption.html",
     "title": "COVID-19 Paper Figures",
     "section": "",
-    "text": "CitationBibTeX citation:@online{zapata-webborn,\n  author = {Zapata-Webborn, Ellen},\n  title = {COVID-19 {Paper} {Figures}},\n  date = {},\n  url = {https://warwickrug.github.io//posts/2023-03-08-impact-of-covid19-on-energy-consumption/resources/2023-03-08-impact-of-covid19-on-energy-consumption.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nZapata-Webborn, Ellen. n.d. “COVID-19 Paper Figures.” https://warwickrug.github.io//posts/2023-03-08-impact-of-covid19-on-energy-consumption/resources/2023-03-08-impact-of-covid19-on-energy-consumption.html."
+    "text": "CitationBibTeX citation:@online{zapata-webborn,\n  author = {Zapata-Webborn, Ellen},\n  title = {COVID-19 {Paper} {Figures}},\n  date = {},\n  url = {https://warwickrug.github.io/posts/2023-03-08-impact-of-covid19-on-energy-consumption/resources/2023-03-08-impact-of-covid19-on-energy-consumption.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nZapata-Webborn, Ellen. n.d. “COVID-19 Paper Figures.” https://warwickrug.github.io/posts/2023-03-08-impact-of-covid19-on-energy-consumption/resources/2023-03-08-impact-of-covid19-on-energy-consumption.html."
   },
   {
     "objectID": "posts/2022-07-14-dependencies/index.html",
     "href": "posts/2022-07-14-dependencies/index.html",
     "title": "Managing R script dependencies: automagic and renv",
     "section": "",
-    "text": "At the end of our previous presentation by Iain Emsley on code review we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.\nIn order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box {automagic} and the more complex, yet backed up by RStudio, {renv}\nAt the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.\n\nYou can check the standalone Slides here and Source code\n\n\n\nCitationBibTeX citation:@online{cámara-menoyo2022,\n  author = {Cámara-Menoyo, Carlos},\n  title = {Managing {R} Script Dependencies: Automagic and Renv},\n  date = {2022-07-14},\n  url = {https://warwickrug.github.io//posts/2022-07-14-dependencies},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCámara-Menoyo, Carlos. 2022. “Managing R Script Dependencies:\nAutomagic and Renv.” July 14, 2022. https://warwickrug.github.io//posts/2022-07-14-dependencies."
+    "text": "At the end of our previous presentation by Iain Emsley on code review we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.\nIn order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box {automagic} and the more complex, yet backed up by RStudio, {renv}\nAt the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.\n\nYou can check the standalone Slides here and Source code\n\n\n\nCitationBibTeX citation:@online{cámara-menoyo2022,\n  author = {Cámara-Menoyo, Carlos},\n  title = {Managing {R} Script Dependencies: Automagic and Renv},\n  date = {2022-07-14},\n  url = {https://warwickrug.github.io/posts/2022-07-14-dependencies},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCámara-Menoyo, Carlos. 2022. “Managing R Script Dependencies:\nAutomagic and Renv.” July 14, 2022. https://warwickrug.github.io/posts/2022-07-14-dependencies."
   },
   {
     "objectID": "posts/2022-03-09-bnmonitorpackage/index.html",
