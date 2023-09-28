@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kasia Taylor and Ben Dickel">
-<meta name="dcterms.date" content="2022-03-09">
+<meta name="author" content="Carlos Cámara-Menoyo">
+<meta name="dcterms.date" content="2022-07-14">
+<meta name="description" content="In this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv}">
 
-<title>Warwick R-User Group - Long Term Gas Supply &amp; Demand Scenarios</title>
+<title>Warwick R-User Group - Managing R script dependencies: automagic and renv</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,10 +131,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Long Term Gas Supply &amp; Demand Scenarios</h1>
-                                <div class="quarto-categories">
+      <h1 class="title">Managing R script dependencies: automagic and renv</h1>
+                  <div>
+        <div class="description">
+          <p>In this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv}</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">talks</div>
-                <div class="quarto-category">dataviz</div>
+                <div class="quarto-category">reproducibility</div>
               </div>
                   </div>
   </div>
@@ -144,14 +150,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Kasia Taylor and Ben Dickel </p>
+               <p><a href="https://carloscamara.es/en">Carlos Cámara-Menoyo</a> </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 9, 2022</p>
+        <p class="date">July 14, 2022</p>
       </div>
     </div>
     
@@ -167,9 +173,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources:</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/posts/2022-03-09-nationalgrid/2022-03-09-nationalgrid.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/posts/2022-07-14-dependencies/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -177,10 +183,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>At the end of our <a href="../../posts/2022-05-17-code-review/">previous presentation by Iain Emsley on code review</a> we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.</p>
+<p>In order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box <a href="https://github.com/cole-brokamp/automagic">{automagic}</a> and the more complex, yet backed up by RStudio, <a href="https://github.com/rstudio/renv/">{renv}</a></p>
+<p>At the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.</p>
 <section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources:</h2>
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li><a href="resources/Long_Term_Gas_Supply_Demand_Scenarios.pdf">Talk slides</a></li>
+<li><a href="https://ccamara.github.io/wrug-depedencies/slides.html#1" target="_blank">Slides</a></li>
+<li><a href="https://github.com/ccamara/wrug-depedencies" target="_blank">Source code</a></li>
 </ul>
 
 

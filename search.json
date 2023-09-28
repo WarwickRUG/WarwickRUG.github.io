@@ -35,15 +35,15 @@
     "text": "Talk slides \nRelevant paper: Error Bars Considered Harmful"
   },
   {
-    "objectID": "posts/2022-09-15-R-and-Docker/2022-09-15-R-and-Docker.html",
-    "href": "posts/2022-09-15-R-and-Docker/2022-09-15-R-and-Docker.html",
+    "objectID": "posts/2022-09-15-R-and-Docker/index.html",
+    "href": "posts/2022-09-15-R-and-Docker/index.html",
     "title": "R and Docker",
     "section": "",
     "text": "In this online event, we continue the reproducibility theme from our last meetup, with James Tripp introducing Docker containers and how they can be used with R. See full details below.\nSpeaker James Tripp, Senior Research Software Engineer, Information and Digital Group, University of Warwick\nAbstract Docker is a container technology which allows you to specify and build a compute environment. You can run the environment on your local machine and both the instructions for creating the environment and the environment itself can be shared. In this talk I will (a) introduce containers, (b) discuss a worked examples of using Docker with R, and (c) consider how containers can help us do better research. Hopefully this presentation will help those of you who have never used Docker to consider if you want to use Docker in your own work and where to start."
   },
   {
-    "objectID": "posts/2022-09-15-R-and-Docker/2022-09-15-R-and-Docker.html#resources",
-    "href": "posts/2022-09-15-R-and-Docker/2022-09-15-R-and-Docker.html#resources",
+    "objectID": "posts/2022-09-15-R-and-Docker/index.html#resources",
+    "href": "posts/2022-09-15-R-and-Docker/index.html#resources",
     "title": "R and Docker",
     "section": "Resources",
     "text": "Resources\n\nSlides\nSource code"
@@ -63,57 +63,43 @@
     "text": "For web-scraping, we make use of the fact that web pages follow a standardised structure. We can tell R exactly which element of this structure we want to collect.\nWeb pages have a head and a body. HTML documents consist of a tree of elements and text. Inside the body of a HTML page, tags can specify the elements to be displayed. Examples:\n&lt;h1&gt;This is a heading.&lt;/h1&gt;\n&lt;p&gt;This is a paragraph.&lt;/p&gt;&lt;p&gt;And this is the next.&lt;/p&gt;\nIn addition, HTML attributes can provide additional information about HTML elements. Attributes are included in the starting tag and come as name-value-pairs (attributename=“attributevalue”). We often need to use attributes to specify what exactly we want to scrape. An example of an attribute are classes. They specify a class for an HTML element. Multiple HTML elements can share the same class. We often encounter classes because they are frequently used for consistent formatting of similar content.\nExample: &lt;p class=\"definitions\"&gt;This is the text within the p of class definitions.&lt;/p&gt;\nFor an overview of further attributes, check W3Schools.\nHow can we specify the tags and attributes of the information we are interested in? We use CSS selectors. CSS selectors are pattern matching rules which are originally used to determine which style and formatting rules apply to which elements.\nExamples: p refers to all paragraphs on a website. .definitions refers to all elements with the class definitions on a website.\nTo learn more about CSS selectors, check W3Schools.\nWe can find the relevant element tags and attributes through our browser, by looking at the HTML source code of any website and by inspecting specific elements. There are also tools to make our life easier like SelectorGadget (check out its webpage)."
   },
   {
-    "objectID": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/2023-03-08-impact-of-covid19-on-energy-consumption.html",
-    "href": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/2023-03-08-impact-of-covid19-on-energy-consumption.html",
-    "title": "Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption",
-    "section": "",
-    "text": "The COVID-19 pandemic changed the way people lived, worked, and studied around the world, with direct consequences for domestic energy use. In this talk I present our study which assessed the impact of COVID-19 lockdowns in the first two years of the pandemic on household electricity and gas use in England and Wales. I explain how I used R for the machine learning and how I made the figures (see .Rmd file for figure code).\nUsing data for 508 (electricity) and 326 (gas) homes, elastic net regression, neural network and extreme gradient boosting predictive models were trained and tested on pre-pandemic data. The most accurate model for each household was used to create counterfactuals (predictions in the absence of COVID-19) against which observed pandemic energy use was compared. Our analysis showed that on average (electricity; gas) consumption increased by (7.8%; 5.7%) in year 1 of the pandemic and by (2.2%; 0.2%) in year 2. The greatest increases were in the winter lockdown (January – March 2021) by 11.6% and 9.0% for electricity and gas, respectively. At the start of 2022 electricity use remained 2.0% higher while gas use was around 1.9% lower than predicted. Households with children showed the greatest increase in electricity consumption during lockdowns, followed by those with adults in work. Wealthier households increased their electricity consumption by more than the less wealthy and continued to use more than predicted throughout the two-year period while the less wealthy returned to pre-pandemic or lower consumption from summer 2021. Low dwelling efficiency was associated with a greater increase in energy consumption during the pandemic. Additionally, this study shows the value of different machine learning techniques for counterfactual modelling at the individual-dwelling level, and our approach can be used to robustly estimate the impact of other events and interventions."
-  },
-  {
-    "objectID": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/2023-03-08-impact-of-covid19-on-energy-consumption.html#resources",
-    "href": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/2023-03-08-impact-of-covid19-on-energy-consumption.html#resources",
-    "title": "Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption",
-    "section": "Resources",
-    "text": "Resources\n\nSlides\nCode for figures\nJournal article: Zapata-Webborn, E et al (2023). The impact of COVID-19 on household energy consumption in England and Wales from April 2020 to March 2022, Energy and Buildings, 297:113428, https://doi.org/10.1016/j.enbuild.2023.113428."
-  },
-  {
-    "objectID": "posts/2022-07-14-dependencies/2022-07-14-dependencies.html",
-    "href": "posts/2022-07-14-dependencies/2022-07-14-dependencies.html",
+    "objectID": "posts/2022-07-14-dependencies/index.html",
+    "href": "posts/2022-07-14-dependencies/index.html",
     "title": "Managing R script dependencies: automagic and renv",
     "section": "",
     "text": "At the end of our previous presentation by Iain Emsley on code review we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.\nIn order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box {automagic} and the more complex, yet backed up by RStudio, {renv}\nAt the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series."
   },
   {
-    "objectID": "posts/2022-07-14-dependencies/2022-07-14-dependencies.html#resources",
-    "href": "posts/2022-07-14-dependencies/2022-07-14-dependencies.html#resources",
+    "objectID": "posts/2022-07-14-dependencies/index.html#resources",
+    "href": "posts/2022-07-14-dependencies/index.html#resources",
     "title": "Managing R script dependencies: automagic and renv",
     "section": "Resources",
     "text": "Resources\n\nSlides\nSource code"
   },
   {
-    "objectID": "posts/2022-03-09-bnmonitorpackage/2022-03-09-bnmonitor-package.html",
-    "href": "posts/2022-03-09-bnmonitorpackage/2022-03-09-bnmonitor-package.html",
+    "objectID": "posts/2022-03-09-bnmonitorpackage/index.html",
+    "href": "posts/2022-03-09-bnmonitorpackage/index.html",
     "title": "Sensitivity and Robustness Analysis in Bayesian Networks with the ‘bnmonitor’ R package",
     "section": "",
     "text": "Talk slides\nbnmonitor package on CRAN"
   },
   {
-    "objectID": "posts/2022-03-09-bnmonitorpackage/2022-03-09-bnmonitor-package.html#resources",
-    "href": "posts/2022-03-09-bnmonitorpackage/2022-03-09-bnmonitor-package.html#resources",
+    "objectID": "posts/2022-03-09-bnmonitorpackage/index.html#resources",
+    "href": "posts/2022-03-09-bnmonitorpackage/index.html#resources",
     "title": "Sensitivity and Robustness Analysis in Bayesian Networks with the ‘bnmonitor’ R package",
     "section": "",
     "text": "Talk slides\nbnmonitor package on CRAN"
   },
   {
-    "objectID": "posts/2022-03-09-nationalgrid/2022-03-09-nationalgrid.html",
-    "href": "posts/2022-03-09-nationalgrid/2022-03-09-nationalgrid.html",
+    "objectID": "posts/2022-03-09-nationalgrid/index.html",
+    "href": "posts/2022-03-09-nationalgrid/index.html",
     "title": "Long Term Gas Supply & Demand Scenarios",
     "section": "",
     "text": "Talk slides"
   },
   {
-    "objectID": "posts/2022-03-09-nationalgrid/2022-03-09-nationalgrid.html#resources",
-    "href": "posts/2022-03-09-nationalgrid/2022-03-09-nationalgrid.html#resources",
+    "objectID": "posts/2022-03-09-nationalgrid/index.html#resources",
+    "href": "posts/2022-03-09-nationalgrid/index.html#resources",
     "title": "Long Term Gas Supply & Demand Scenarios",
     "section": "",
     "text": "Talk slides"
@@ -182,29 +168,29 @@
     "text": "Biography\nChris Mainey is a data scientist and analytical leader in the UK National Health Service (NHS). He has led analytical teams in Patient Safety at NHSE, national benchmarking at University Hospitals Birmingham and has recently joined the specialist analytics team at North Central London ICB. He has experience in patient safety, public health, clinical networks, acute trust informatics, and leading analytical and data science teams.\nChris' work focuses on modelling NHS data, with strong expertise in R and SQL, and experience with a variety of statistical modelling and machine learning techniques. He completed his PhD at UCL, on modelling NHS incident reporting data using quantitative methods and NLP/text mining.\nChris is an experienced trainer, presenter, and post-grad teacher, keen on communicating health data, statistics and ML methods to a variety of audiences. He is a member of the NHS-R community Technical Advisory Group, has authored and maintains several R packages, and is keen to promote R awareness and adoption in the NHS, as well as the wider data science skill set.\nThis is a personal blog/website and does not reflect the opinions of NHS England or any other organisation."
   },
   {
-    "objectID": "posts/2023-05-16-interactive-data-visualisation/2023-05-16-interactive-data-visualisation.html",
-    "href": "posts/2023-05-16-interactive-data-visualisation/2023-05-16-interactive-data-visualisation.html",
+    "objectID": "posts/2023-05-16-interactive-data-visualisation/index.html",
+    "href": "posts/2023-05-16-interactive-data-visualisation/index.html",
     "title": "Interactive Data Visualisation",
     "section": "",
     "text": "In this talk I introduce {htmlwidgets} - the collection of packages you wish you knew. With these packages you can create interactive charts, graphs, tables and maps all in R without needing to learn any JavaScript.\nOn top of {htmlwidgets}, I will also demonstrate the fundamentals of using {shiny} to build server applications all with R - and show how to combine these with {htmlwidgets} to build impressive and beautiful tools.\nI have a background in reproducible research methodologies, so I will talk about how you can use these tools to create an end-to-end reproducible Open Data workflow. The same workflow used by the University of Oxford’s Interactive Data Network that I helped launch."
   },
   {
-    "objectID": "posts/2023-05-16-interactive-data-visualisation/2023-05-16-interactive-data-visualisation.html#resources",
-    "href": "posts/2023-05-16-interactive-data-visualisation/2023-05-16-interactive-data-visualisation.html#resources",
+    "objectID": "posts/2023-05-16-interactive-data-visualisation/index.html#resources",
+    "href": "posts/2023-05-16-interactive-data-visualisation/index.html#resources",
     "title": "Interactive Data Visualisation",
     "section": "Resources",
     "text": "Resources\n\nGitHub repository - slides and example code."
   },
   {
-    "objectID": "posts/2022-05-17-code-review/2022-05-17-code-review.html",
-    "href": "posts/2022-05-17-code-review/2022-05-17-code-review.html",
+    "objectID": "posts/2022-05-17-code-review/index.html",
+    "href": "posts/2022-05-17-code-review/index.html",
     "title": "Code Review",
     "section": "",
     "text": "Talk slides"
   },
   {
-    "objectID": "posts/2022-05-17-code-review/2022-05-17-code-review.html#resources",
-    "href": "posts/2022-05-17-code-review/2022-05-17-code-review.html#resources",
+    "objectID": "posts/2022-05-17-code-review/index.html#resources",
+    "href": "posts/2022-05-17-code-review/index.html#resources",
     "title": "Code Review",
     "section": "",
     "text": "Talk slides"
@@ -236,6 +222,20 @@
     "title": "The Grammar of Graphics: an introduction to ggplot2",
     "section": "",
     "text": "Talk slides\nggplot2 package documentation\nggChernoff package on GitHub"
+  },
+  {
+    "objectID": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
+    "href": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
+    "title": "Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption",
+    "section": "",
+    "text": "The COVID-19 pandemic changed the way people lived, worked, and studied around the world, with direct consequences for domestic energy use. In this talk I present our study which assessed the impact of COVID-19 lockdowns in the first two years of the pandemic on household electricity and gas use in England and Wales. I explain how I used R for the machine learning and how I made the figures (see .Rmd file for figure code).\nUsing data for 508 (electricity) and 326 (gas) homes, elastic net regression, neural network and extreme gradient boosting predictive models were trained and tested on pre-pandemic data. The most accurate model for each household was used to create counterfactuals (predictions in the absence of COVID-19) against which observed pandemic energy use was compared. Our analysis showed that on average (electricity; gas) consumption increased by (7.8%; 5.7%) in year 1 of the pandemic and by (2.2%; 0.2%) in year 2. The greatest increases were in the winter lockdown (January – March 2021) by 11.6% and 9.0% for electricity and gas, respectively. At the start of 2022 electricity use remained 2.0% higher while gas use was around 1.9% lower than predicted. Households with children showed the greatest increase in electricity consumption during lockdowns, followed by those with adults in work. Wealthier households increased their electricity consumption by more than the less wealthy and continued to use more than predicted throughout the two-year period while the less wealthy returned to pre-pandemic or lower consumption from summer 2021. Low dwelling efficiency was associated with a greater increase in energy consumption during the pandemic. Additionally, this study shows the value of different machine learning techniques for counterfactual modelling at the individual-dwelling level, and our approach can be used to robustly estimate the impact of other events and interventions."
+  },
+  {
+    "objectID": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html#resources",
+    "href": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html#resources",
+    "title": "Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption",
+    "section": "Resources",
+    "text": "Resources\n\nSlides\nCode for figures\nJournal article: Zapata-Webborn, E et al (2023). The impact of COVID-19 on household energy consumption in England and Wales from April 2020 to March 2022, Energy and Buildings, 297:113428, https://doi.org/10.1016/j.enbuild.2023.113428."
   },
   {
     "objectID": "posts/2022-12-08-web-scraping-with-rselenium/index.html",
