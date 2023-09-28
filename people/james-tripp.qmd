@@ -13,9 +13,10 @@ about:
     - icon: linkedin
       text: linkedIn
       href: https://www.linkedin.com/in/jamestripp/
-    - icon: web
-      text: Website
-      href: https://jamestripp.net/
   
 editor: visual
 ---
+
+I am passionate about the use of technology to empower individual and groups. A particular fascination of mine is the application of analytic techniques through languages such as R and Python to improve our decision making and enable us to acquire insights about the world around us.
+
+I am currently a Senior Research Software Engineer at the University of Warwick. Previously, I was a Senior Academic Technologist at the Centre of Interdisciplinary Methodologies and Post-Doctoral Research Fellow in the Department of Psychology. I hold a BSc(Hons) and PhD in Psychology.
