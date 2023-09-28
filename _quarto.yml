@@ -4,7 +4,7 @@ project:
 website:
   title: "Warwick R-User Group"
   image: "media/logo_small_white.png"
-  site-url: https://warwickrug.github.io/
+  site-url: https://warwickrug.github.io
   description: "Warwick R-User Group's official website"
   # favicon: "favicon.png"
   reader-mode: true
