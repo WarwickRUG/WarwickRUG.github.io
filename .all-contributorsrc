@@ -51,12 +51,23 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "EllaKaye",
+      "name": "Ella Kaye",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7222491?v=4",
+      "profile": "https://ellakaye.co.uk",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "wrug_website",
+  "projectName": "WarwickRUG.github.io",
   "projectOwner": "WarwickRUG",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs",
+  "commitConvention": "angular"
 }
