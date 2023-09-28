@@ -17,10 +17,18 @@ Warwick R User Group meets every 2 months to discuss R-related topics. At each s
 
 Everyone is welcome, regardless of R programming experience, from across or outside Warwick University. For further information, visit our Meetup.com page or contact a member of the [WRUG committee](#committee).
 
-## Committee
+## Committee {#committee}
 
 ::: {#committee-listings}
 :::
+
+### Former members
+
+We would like to thank former WRUG committee members (in alphabetical order):
+
+-   [**Aditi Shenvi**](https://ashenvi10.github.io/)
+
+-   [**David Selby**](https://selbydavid.com/)
 
 ## Support
 
