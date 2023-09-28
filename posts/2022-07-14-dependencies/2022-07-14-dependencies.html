@@ -128,7 +128,44 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Managing R script dependencies: automagic and renv</h1>
+                  <div>
+        <div class="description">
+          <p>In this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv}</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">talks</div>
+                <div class="quarto-category">reproducibility</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="https://carloscamara.es/en">Carlos Cámara-Menoyo</a> </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 14, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -141,45 +178,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/posts/2022-07-14-dependencies/2022-07-14-dependencies.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Managing R script dependencies: automagic and renv</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">talks</div>
-    <div class="quarto-category">reproducibility</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    <p>In this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv}</p>
-  </div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p><a href="https://carloscamara.es/en">Carlos Cámara-Menoyo</a> </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 14, 2022</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
 
 <p>At the end of our <a href="../../posts/2022-05-17-code-review/">previous presentation by Iain Emsley on code review</a> we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.</p>
 <p>In order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box <a href="https://github.com/cole-brokamp/automagic">{automagic}</a> and the more complex, yet backed up by RStudio, <a href="https://github.com/rstudio/renv/">{renv}</a></p>

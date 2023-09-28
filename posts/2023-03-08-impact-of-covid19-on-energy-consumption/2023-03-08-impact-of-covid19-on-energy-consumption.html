@@ -128,7 +128,44 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption</h1>
+                  <div>
+        <div class="description">
+          <p>Using elastic net regression and neural network models to predict what would have happened in the absence of the pandemic, and comparing these ‘counterfactuals’ with observed electricity and gas consumption in several hundred households.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">talks</div>
+                <div class="quarto-category">modelling</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="https://www.ellenwebborn.com/">Ellen Zapata-Webborn</a> </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 8, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -141,45 +178,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/posts/2023-03-08-impact-of-covid19-on-energy-consumption/2023-03-08-impact-of-covid19-on-energy-consumption.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">talks</div>
-    <div class="quarto-category">modelling</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    <p>Using elastic net regression and neural network models to predict what would have happened in the absence of the pandemic, and comparing these ‘counterfactuals’ with observed electricity and gas consumption in several hundred households.</p>
-  </div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p><a href="https://www.ellenwebborn.com/">Ellen Zapata-Webborn</a> </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 8, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
 
 <p>The COVID-19 pandemic changed the way people lived, worked, and studied around the world, with direct consequences for domestic energy use. In this talk I present our study which assessed the impact of COVID-19 lockdowns in the first two years of the pandemic on household electricity and gas use in England and Wales. I explain how I used R for the machine learning and how I made the figures (see .Rmd file for figure code).</p>
 <p>Using data for 508 (electricity) and 326 (gas) homes, elastic net regression, neural network and extreme gradient boosting predictive models were trained and tested on pre-pandemic data. The most accurate model for each household was used to create counterfactuals (predictions in the absence of COVID-19) against which observed pandemic energy use was compared. Our analysis showed that on average (electricity; gas) consumption increased by (7.8%; 5.7%) in year 1 of the pandemic and by (2.2%; 0.2%) in year 2. The greatest increases were in the winter lockdown (January – March 2021) by 11.6% and 9.0% for electricity and gas, respectively. At the start of 2022 electricity use remained 2.0% higher while gas use was around 1.9% lower than predicted. Households with children showed the greatest increase in electricity consumption during lockdowns, followed by those with adults in work. Wealthier households increased their electricity consumption by more than the less wealthy and continued to use more than predicted throughout the two-year period while the less wealthy returned to pre-pandemic or lower consumption from summer 2021. Low dwelling efficiency was associated with a greater increase in energy consumption during the pandemic. Additionally, this study shows the value of different machine learning techniques for counterfactual modelling at the individual-dwelling level, and our approach can be used to robustly estimate the impact of other events and interventions.</p>
