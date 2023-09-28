@@ -20,9 +20,9 @@ In order to do so, two different methods will be presented, compared and discuss
 
 At the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series. 
 
+```{=html}
+<iframe class="slide-deck" src="https://ccamara.github.io/wrug-depedencies/slides.html"></iframe>
+```
 
-## Resources
-
-* [Slides](https://ccamara.github.io/wrug-depedencies/slides.html#1){target="_blank"}
-* [Source code](https://github.com/ccamara/wrug-depedencies){target="_blank"}
+You can check the [standalone Slides here](https://ccamara.github.io/wrug-depedencies/slides.html#1){target="_blank"} and [Source code](https://github.com/ccamara/wrug-depedencies){target="_blank"}
 
