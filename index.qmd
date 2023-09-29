@@ -11,7 +11,7 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/WarwickRUG
-    - icon: meetup
+    - icon: calendar
       text: Meetup
       url: https://www.meetup.com/WarwickRUG/events/
     - icon: envelope
