@@ -10,7 +10,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/jamestripp
-    - icon: web
+    - icon: globe
       text: Website
       href: https://warwick.ac.uk/heatherturner
   

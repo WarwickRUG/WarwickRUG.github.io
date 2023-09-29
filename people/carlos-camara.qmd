@@ -17,7 +17,7 @@ about:
     - icon: envelope
       text: E-mail
       href: mailto:carlos.camara@warwick.ac.uk
-    - icon: web
+    - icon: globe
       text: Website
       href: https://carloscamara.es/en
   

@@ -10,7 +10,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/chrismainey
-    - icon: web
+    - icon: globe
       text: Website
       href: https://www.mainard.co.uk/
   
