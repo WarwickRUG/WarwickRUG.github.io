@@ -8,7 +8,6 @@ output: word_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
                       include = FALSE,
-                      eval = FALSE, # Comment line to run the code cells.
                       dpi = 300,
                       fig.height = 3, fig.width = 6.5)
 
