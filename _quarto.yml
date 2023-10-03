@@ -22,8 +22,6 @@ website:
     tools:
       - icon: mastodon
         href: https://fosstodon.org/@WarwickRUG
-      - icon: twitter
-        href: https://twitter.com
       - icon: github
         menu:
           - text: Source Code

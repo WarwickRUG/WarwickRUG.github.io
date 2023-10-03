@@ -5,9 +5,9 @@ image: "media/logo_small.png"
 about:
   template: trestles
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/WarwickRUG
+    - icon: mastodon
+      text: Mastodon
+      href: https://fosstodon.org/@WarwickRUG
     - icon: github
       text: GitHub
       href: https://github.com/WarwickRUG
