@@ -11,11 +11,20 @@ categories:
   - models
 image: featured.webp
 draft: false
+lightbox: true
 ---
 
 This talk will feature Chris Mainey discussing the use of ‘Generalized Additive Models (GAMs)’ to fit regression models to ‘wiggly’ or non-linear data. Sometimes the relationships we are interested in are not a simple straight-line. Polynomial terms and combining them to for ‘splines’ will be introduced and then used in GAMs. This will be demonstrated in R as part of the talk. This will be an exciting talk for those wanting to deepen their knowledge of regression.
 
 For in-person attendees, the talk will be followed by pizza/salad and soft drinks, thanks to our sponsors: the [R Consortium](https://www.r-consortium.org/).
+
+## Resources
+
+* GAM workshop for NHS-R Community Conference 2023 GitHub repo: <https://github.com/chrismainey/GAMworkshop>
+* Slides: <https://chrismainey.github.io/GAMworkshop/GAMworkshop.html>
+
+<iframe class="slide-deck ar3x2" src="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html#1" title="Slides">
+</iframe>
 
 ## About the speaker
 
@@ -27,3 +36,10 @@ Those interested in the NHS-R community may also want to see:
 - GitHub: <https://github.com/nhs-r-community>
 - NHS-R Conference material (more content published soon): <https://www.youtube.com/channel/UCMwM-3tg_-Pbx8hKO78q5EA>
 
+## Photos
+
+![](media/highres_517601369.jpeg){group="my-gallery"}
+![](media/highres_517601370.jpeg){group="my-gallery"}
+![](media/highres_517601040.jpeg){group="my-gallery"}
+![](media/highres_517601041.jpeg){group="my-gallery"}
+![](media/highres_517601088.jpeg){group="my-gallery"}
