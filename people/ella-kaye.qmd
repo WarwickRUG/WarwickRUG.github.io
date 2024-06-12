@@ -10,6 +10,17 @@ about:
     - icon: globe
       text: Website
       href: https://ellakaye.co.uk
+    - icon: github
+      text: Github
+      href: https://github.com/EllaKaye
+    - icon: mastodon
+      text: Mastodon
+      href: https://fosstodon.org/@ellakaye
+    - icon: envelope
+      text: E-mail
+      href: mailto:ella.m.kaye@warwick.ac.uk
   
-editor: visual
+editor: source
 ---
+
+Ella is a Research Software Engineer in the Department of Statistics at the University of Warwick, UK. She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project. She also runs [rainbowR](https://rainbowr.netlify.app), a community that supports, promotes and connects LGBTQ+ people who code in the R language.
