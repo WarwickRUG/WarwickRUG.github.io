@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/about.html",
+    "items": [
+      "/people/carlos-camara.html",
+      "/people/chris-mainey.html",
+      "/people/ella-kaye.html",
+      "/people/heather-turner.html",
+      "/people/james-tripp.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/posts/2023-11-23-fitting-wiggly-data/index.html",
@@ -16,16 +26,6 @@
       "/posts/2017-02-02-dynamite-plunger-plots/index.html",
       "/posts/2017-01-19-emojiplots/index.html",
       "/posts/2017-01-19-intro-shiny/index.html"
-    ]
-  },
-  {
-    "listing": "/about.html",
-    "items": [
-      "/people/carlos-camara.html",
-      "/people/chris-mainey.html",
-      "/people/ella-kaye.html",
-      "/people/heather-turner.html",
-      "/people/james-tripp.html"
     ]
   }
 ]
