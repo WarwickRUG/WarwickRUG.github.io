@@ -31,9 +31,9 @@ In this talk, Ella presents three related projects:
 
 - **warwickplots**: An R package with colour palettes and a ggplot2 theme
   
-- **warwickpres**(https://github.com/Warwick-Stats-Resources/warwickpres): A Quarto Revealjs extension for presentations
+- **warwickpres**: A Quarto Revealjs extension for presentations
 
-- **warwickcourse**(https://github.com/Warwick-Stats-Resources/warwickcourse): A GitHub template for creating course/workshop websites with Quarto
+- **warwickcourse**: A GitHub template for creating course/workshop websites with Quarto
 
 She lets people know they exist and what they look like. She gives a quick guide and demo on getting started using them and lets people know where to learn more. Most of all, she encourages people to use them!
 
@@ -41,7 +41,7 @@ She lets people know they exist and what they look like. She gives a quick guide
 
 **warwickplots**: [GitHub](https://github.com/Warwick-Stats-Resources/warwickplots), [documentation website](https://warwick-stats-resources.github.io/warwickplots)
 
-**warwickpres**: [GitHub](https://github.com/Warwick-Stats-Resources/warwickpres), [demonstaration presentation](https://warwick-stats-resources.github.io/warwickpres)
+**warwickpres**: [GitHub](https://github.com/Warwick-Stats-Resources/warwickpres), [demonstration presentation](https://warwick-stats-resources.github.io/warwickpres)
 
 **warwickcourse**: [GitHub](https://github.com/Warwick-Stats-Resources/warwickcourse), [website template](https://warwick-stats-resources.github.io/warwickcourse), [full course built on template](https://warwick-stats-resources.github.io/r-packages-2024)
 
