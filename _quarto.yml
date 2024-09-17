@@ -32,6 +32,13 @@ website:
         href: https://meetup.com/warwickrug/
       - icon: rss
         href: index.xml
+  comments:
+    giscus:
+      repo: WarwickRUG/WarwickRUG.github.io
+      category: "giscus comments"
+      category-id: DIC_kwDOJ1yHnM4CZvXb
+      mapping: url
+      input-position: top
 format:
   html:
     theme: cosmo
