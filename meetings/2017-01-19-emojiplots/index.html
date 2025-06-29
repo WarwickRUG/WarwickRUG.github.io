@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Carlos Cámara-Menoyo">
-<meta name="dcterms.date" content="2022-07-14">
-<meta name="description" content="In this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv}">
+<meta name="author" content="Alejandra Avalos-Pacheco">
+<meta name="dcterms.date" content="2017-01-19">
+<meta name="description" content="Use emojifont and emoGG in your plots.">
 
-<title>Managing R script dependencies: automagic and renv – Warwick R-User Group</title>
+<title>Procrastinating in R: emoji plots – Warwick R-User Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html"> 
-<span class="menu-text">Talks</span></a>
+    <a class="nav-link" href="../../meetings.html"> 
+<span class="menu-text">Meetings</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -138,15 +138,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Managing R script dependencies: automagic and renv</h1>
+      <h1 class="title">Procrastinating in R: emoji plots</h1>
                   <div>
         <div class="description">
-          <p>In this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv}</p>
+          <p>Use <code>emojifont</code> and <code>emoGG</code> in your plots.</p>
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">talks</div>
-                <div class="quarto-category">reproducibility</div>
+                <div class="quarto-category">dataviz</div>
               </div>
                   </div>
   </div>
@@ -157,14 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p><a href="https://carloscamara.es/en">Carlos Cámara-Menoyo</a> </p>
+               <p><a href="https://sites.google.com/view/aleavalos">Alejandra Avalos-Pacheco</a> </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 14, 2022</p>
+        <p class="date">January 19, 2017</p>
       </div>
     </div>
     
@@ -175,8 +175,14 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources:</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2017-01-19-emojiplots/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -185,24 +191,27 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>At the end of our <a href="../../posts/2022-05-17-code-review/">previous presentation by Iain Emsley on code review</a> we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.</p>
-<p>In order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box <a href="https://github.com/cole-brokamp/automagic">{automagic}</a> and the more complex, yet backed up by RStudio, <a href="https://github.com/rstudio/renv/">{renv}</a></p>
-<p>At the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.</p>
-<iframe class="slide-deck" src="https://ccamara.github.io/wrug-depedencies/slides.html"></iframe>
-<p>You can check the <a href="https://ccamara.github.io/wrug-depedencies/slides.html#1" target="_blank">standalone Slides here</a> and <a href="https://github.com/ccamara/wrug-depedencies" target="_blank">Source code</a></p>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources:</h2>
+<ul>
+<li><a href="resources/emoji_plots.pdf">Talk slides</a></li>
+<li><a href="https://cran.r-project.org/web/packages/emojifont/index.html">emojifont package on CRAN</a></li>
+<li><a href="https://github.com/dill/emoGG"><strong>emoGG</strong> package on GitHub</a></li>
+</ul>
 
 
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{cámara-menoyo2022,
-  author = {Cámara-Menoyo, Carlos},
-  title = {Managing {R} Script Dependencies: Automagic and Renv},
-  date = {2022-07-14},
-  url = {https://warwickrug.github.io/talks/2022-07-14-dependencies/},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{avalos-pacheco2017,
+  author = {Avalos-Pacheco, Alejandra},
+  title = {Procrastinating in {R:} Emoji Plots},
+  date = {2017-01-19},
+  url = {https://warwickrug.github.io/meetings/2017-01-19-emojiplots/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-cámara-menoyo2022" class="csl-entry quarto-appendix-citeas" role="listitem">
-Cámara-Menoyo, Carlos. 2022. <span>“Managing R Script Dependencies:
-Automagic and Renv.”</span> July 14, 2022. <a href="https://warwickrug.github.io/talks/2022-07-14-dependencies/">https://warwickrug.github.io/talks/2022-07-14-dependencies/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-avalos-pacheco2017" class="csl-entry quarto-appendix-citeas" role="listitem">
+Avalos-Pacheco, Alejandra. 2017. <span>“Procrastinating in R: Emoji
+Plots.”</span> January 19, 2017. <a href="https://warwickrug.github.io/meetings/2017-01-19-emojiplots/">https://warwickrug.github.io/meetings/2017-01-19-emojiplots/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -608,4 +617,4 @@ Automagic and Renv.”</span> July 14, 2022. <a href="https://warwickrug.github.
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/talks/2022-07-14-dependencies/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2017-01-19-emojiplots/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

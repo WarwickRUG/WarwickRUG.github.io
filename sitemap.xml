@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://warwickrug.github.io/talks/2023-11-23-fitting-wiggly-data/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.311Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2023-03-08-impact-of-covid19-on-energy-consumption/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.289Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2022-09-15-R-and-Docker/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2022-05-17-code-review/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.269Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2022-03-09-bnmonitorpackage/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.259Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2017-02-16-grammar-graphics/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.259Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2017-02-02-animated-plots/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.258Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2017-01-19-emojiplots/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.258Z</lastmod>
-  </url>
-  <url>
     <loc>https://warwickrug.github.io/people/james-tripp.html</loc>
-    <lastmod>2025-06-29T13:46:08.257Z</lastmod>
+    <lastmod>2025-06-29T13:50:53.557Z</lastmod>
   </url>
   <url>
     <loc>https://warwickrug.github.io/people/ella-kaye.html</loc>
-    <lastmod>2025-06-29T13:46:08.257Z</lastmod>
+    <lastmod>2025-06-29T13:50:53.557Z</lastmod>
   </url>
   <url>
     <loc>https://warwickrug.github.io/people/carlos-camara.html</loc>
-    <lastmod>2025-06-29T13:46:08.257Z</lastmod>
+    <lastmod>2025-06-29T13:50:53.557Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2023-05-16-interactive-data-visualisation/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.471Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2022-12-08-web-scraping-with-rselenium/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2022-07-14-dependencies/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.440Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2022-03-09-nationalgrid/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.421Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2017-02-02-dynamite-plunger-plots/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.418Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2017-01-19-intro-shiny/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.417Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings.html</loc>
+    <lastmod>2025-06-29T13:50:53.416Z</lastmod>
   </url>
   <url>
     <loc>https://warwickrug.github.io/about.html</loc>
-    <lastmod>2025-06-29T13:46:08.250Z</lastmod>
+    <lastmod>2025-06-29T13:50:53.409Z</lastmod>
   </url>
   <url>
     <loc>https://warwickrug.github.io/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.250Z</lastmod>
+    <lastmod>2025-06-29T13:50:53.409Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2017-01-19-emojiplots/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.417Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2017-02-02-animated-plots/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.418Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2017-02-16-grammar-graphics/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.419Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2022-03-09-bnmonitorpackage/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.419Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2022-05-17-code-review/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.428Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2022-09-15-R-and-Docker/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.441Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2023-03-08-impact-of-covid19-on-energy-consumption/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickrug.github.io/meetings/2023-11-23-fitting-wiggly-data/index.html</loc>
+    <lastmod>2025-06-29T13:50:53.472Z</lastmod>
   </url>
   <url>
     <loc>https://warwickrug.github.io/people/chris-mainey.html</loc>
-    <lastmod>2025-06-29T13:46:08.257Z</lastmod>
+    <lastmod>2025-06-29T13:50:53.557Z</lastmod>
   </url>
   <url>
     <loc>https://warwickrug.github.io/people/heather-turner.html</loc>
-    <lastmod>2025-06-29T13:46:08.257Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks.html</loc>
-    <lastmod>2025-06-29T13:46:08.257Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2017-01-19-intro-shiny/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.258Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2017-02-02-dynamite-plunger-plots/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.258Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2022-03-09-nationalgrid/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.261Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2022-07-14-dependencies/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.280Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2022-12-08-web-scraping-with-rselenium/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.282Z</lastmod>
-  </url>
-  <url>
-    <loc>https://warwickrug.github.io/talks/2023-05-16-interactive-data-visualisation/index.html</loc>
-    <lastmod>2025-06-29T13:46:08.310Z</lastmod>
+    <lastmod>2025-06-29T13:50:53.557Z</lastmod>
   </url>
 </urlset>

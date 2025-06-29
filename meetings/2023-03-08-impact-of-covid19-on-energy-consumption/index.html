@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Chris Mainey">
-<meta name="dcterms.date" content="2023-11-26">
-<meta name="description" content="Using ‘Generalized Additive Models (GAMs)’ to fit regression models to ‘wiggly’ or non-linear data.">
+<meta name="author" content="Ellen Zapata-Webborn">
+<meta name="dcterms.date" content="2023-03-08">
+<meta name="description" content="Using elastic net regression and neural network models to predict what would have happened in the absence of the pandemic, and comparing these ‘counterfactuals’ with observed electricity and gas consumption in several hundred households.">
 
-<title>Fitting Wiggly Data: Generalized Additive Models – Warwick R-User Group</title>
+<title>Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption – Warwick R-User Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html"> 
-<span class="menu-text">Talks</span></a>
+    <a class="nav-link" href="../../meetings.html"> 
+<span class="menu-text">Meetings</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -138,15 +138,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Fitting Wiggly Data: Generalized Additive Models</h1>
+      <h1 class="title">Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption</h1>
                   <div>
         <div class="description">
-          <p>Using ‘Generalized Additive Models (GAMs)’ to fit regression models to ‘wiggly’ or non-linear data.</p>
+          <p>Using elastic net regression and neural network models to predict what would have happened in the absence of the pandemic, and comparing these ‘counterfactuals’ with observed electricity and gas consumption in several hundred households.</p>
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">talks</div>
-                <div class="quarto-category">models</div>
+                <div class="quarto-category">modelling</div>
               </div>
                   </div>
   </div>
@@ -157,14 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p><a href="https://github.com/chrismainey">Chris Mainey</a> </p>
+               <p><a href="https://www.ellenwebborn.com/">Ellen Zapata-Webborn</a> </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 26, 2023</p>
+        <p class="date">March 8, 2023</p>
       </div>
     </div>
     
@@ -181,10 +181,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources</a></li>
-  <li><a href="#about-the-speaker" id="toc-about-the-speaker" class="nav-link" data-scroll-target="#about-the-speaker">About the speaker</a></li>
-  <li><a href="#photos" id="toc-photos" class="nav-link" data-scroll-target="#photos">Photos</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/talks/2023-11-23-fitting-wiggly-data/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2023-03-08-impact-of-covid19-on-energy-consumption/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -193,44 +191,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This talk will feature Chris Mainey discussing the use of ‘Generalized Additive Models (GAMs)’ to fit regression models to ‘wiggly’ or non-linear data. Sometimes the relationships we are interested in are not a simple straight-line. Polynomial terms and combining them to for ‘splines’ will be introduced and then used in GAMs. This will be demonstrated in R as part of the talk. This will be an exciting talk for those wanting to deepen their knowledge of regression.</p>
-<p>For in-person attendees, the talk will be followed by pizza/salad and soft drinks, thanks to our sponsors: the <a href="https://www.r-consortium.org/">R Consortium</a>.</p>
+<p>The COVID-19 pandemic changed the way people lived, worked, and studied around the world, with direct consequences for domestic energy use. In this talk I present our study which assessed the impact of COVID-19 lockdowns in the first two years of the pandemic on household electricity and gas use in England and Wales. I explain how I used R for the machine learning and how I made the figures (see .Rmd file for figure code).</p>
+<p>Using data for 508 (electricity) and 326 (gas) homes, elastic net regression, neural network and extreme gradient boosting predictive models were trained and tested on pre-pandemic data. The most accurate model for each household was used to create counterfactuals (predictions in the absence of COVID-19) against which observed pandemic energy use was compared. Our analysis showed that on average (electricity; gas) consumption increased by (7.8%; 5.7%) in year 1 of the pandemic and by (2.2%; 0.2%) in year 2. The greatest increases were in the winter lockdown (January – March 2021) by 11.6% and 9.0% for electricity and gas, respectively. At the start of 2022 electricity use remained 2.0% higher while gas use was around 1.9% lower than predicted. Households with children showed the greatest increase in electricity consumption during lockdowns, followed by those with adults in work. Wealthier households increased their electricity consumption by more than the less wealthy and continued to use more than predicted throughout the two-year period while the less wealthy returned to pre-pandemic or lower consumption from summer 2021. Low dwelling efficiency was associated with a greater increase in energy consumption during the pandemic. Additionally, this study shows the value of different machine learning techniques for counterfactual modelling at the individual-dwelling level, and our approach can be used to robustly estimate the impact of other events and interventions.</p>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li>GAM workshop for NHS-R Community Conference 2023 GitHub repo: <a href="https://github.com/chrismainey/GAMworkshop" class="uri">https://github.com/chrismainey/GAMworkshop</a></li>
-<li>Slides: <a href="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html" class="uri">https://chrismainey.github.io/GAMworkshop/GAMworkshop.html</a></li>
+<li><a href="resources/2023-03-08-impact-of-covid19-on-energy-consumption.pptx">Slides</a></li>
+<li><a href="resources/2023-03-08-impact-of-covid19-on-energy-consumption.Rmd" target="_blank">Code for figures</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0378778823006588" target="_blank">Journal article</a>: Zapata-Webborn, E et al (2023). The impact of COVID-19 on household energy consumption in England and Wales from April 2020 to March 2022, <em>Energy and Buildings</em>, 297:113428, <a href="https://doi.org/10.1016/j.enbuild.2023.113428" class="uri">https://doi.org/10.1016/j.enbuild.2023.113428</a>.</li>
 </ul>
-<iframe class="slide-deck ar3x2" src="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html#1" title="Slides">
-</iframe>
-</section>
-<section id="about-the-speaker" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-speaker">About the speaker</h2>
-<p><a href="https://github.com/chrismainey">Chris Mainey</a> is Head Data Scientist for NHS Birmingham and Solihull ICB. He has led analytics and data science teams in areas including hospital benchmarking, population health management, NHS commissioning, mortality statistics and patient safety. He completed his PhD in Applied Statistics and Machine Learning at UCL, focussing on modelling count data and applying natural language processing to NHS datasets. He is a Senior Fellow of the NHS-R Community and is keen on teaching and spreading data science skills, coding, statistics, and good analytical practise. He’s very fond of a good coffee, GAM models, and putting code on GitHub.</p>
-<p>Those interested in the NHS-R community may also want to see:</p>
-<ul>
-<li><a href="https://nhsrcommunity.com/">NHS-R Community – Promoting the use of R in the NHS (nhsrcommunity.com)</a>- open to researchers and anyone in public sector/health related fields.Join the Slack: <a href="https://nhsrcommunity.slack.com/" class="uri">https://nhsrcommunity.slack.com/</a></li>
-<li>GitHub: <a href="https://github.com/nhs-r-community" class="uri">https://github.com/nhs-r-community</a></li>
-<li>NHS-R Conference material (more content published soon): <a href="https://www.youtube.com/channel/UCMwM-3tg_-Pbx8hKO78q5EA" class="uri">https://www.youtube.com/channel/UCMwM-3tg_-Pbx8hKO78q5EA</a></li>
-</ul>
-</section>
-<section id="photos" class="level2">
-<h2 class="anchored" data-anchor-id="photos">Photos</h2>
-<p><img src="media/highres_517601369.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601370.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601040.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601041.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601088.jpeg" class="img-fluid" data-group="my-gallery"></p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{mainey2023,
-  author = {Mainey, Chris},
-  title = {Fitting {Wiggly} {Data:} {Generalized} {Additive} {Models}},
-  date = {2023-11-26},
-  url = {https://warwickrug.github.io/talks/2023-11-23-fitting-wiggly-data/},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{zapata-webborn2023,
+  author = {Zapata-Webborn, Ellen},
+  title = {Using {Predictive} {Modelling} to {Study} the {Impact} of
+    {COVID-19} on {Energy} {Consumption}},
+  date = {2023-03-08},
+  url = {https://warwickrug.github.io/meetings/2023-03-08-impact-of-covid19-on-energy-consumption/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mainey2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Mainey, Chris. 2023. <span>“Fitting Wiggly Data: Generalized Additive
-Models.”</span> November 26, 2023. <a href="https://warwickrug.github.io/talks/2023-11-23-fitting-wiggly-data/">https://warwickrug.github.io/talks/2023-11-23-fitting-wiggly-data/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-zapata-webborn2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Zapata-Webborn, Ellen. 2023. <span>“Using Predictive Modelling to Study
+the Impact of COVID-19 on Energy Consumption.”</span> March 8, 2023. <a href="https://warwickrug.github.io/meetings/2023-03-08-impact-of-covid19-on-energy-consumption/">https://warwickrug.github.io/meetings/2023-03-08-impact-of-covid19-on-energy-consumption/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -636,4 +620,4 @@ Models.”</span> November 26, 2023. <a href="https://warwickrug.github.io/talks
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/talks/2023-11-23-fitting-wiggly-data/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2023-03-08-impact-of-covid19-on-energy-consumption/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

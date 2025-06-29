@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Charlie Hadley">
-<meta name="dcterms.date" content="2023-05-16">
-<meta name="description" content="Using {htmlwidgets} with/without {shiny} in reproducible Open Data workflows.">
+<meta name="author" content="Nathan Cunningham">
+<meta name="dcterms.date" content="2017-01-19">
+<meta name="description" content="A beginner’s guide to Shiny">
 
-<title>Interactive Data Visualisation – Warwick R-User Group</title>
+<title>An introduction to Shiny – Warwick R-User Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html"> 
-<span class="menu-text">Talks</span></a>
+    <a class="nav-link" href="../../meetings.html"> 
+<span class="menu-text">Meetings</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -138,16 +138,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Interactive Data Visualisation</h1>
+      <h1 class="title">An introduction to Shiny</h1>
                   <div>
         <div class="description">
-          <p>Using {htmlwidgets} with/without {shiny} in reproducible Open Data workflows.</p>
+          <p>A beginner’s guide to Shiny</p>
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">talks</div>
-                <div class="quarto-category">dataviz</div>
-                <div class="quarto-category">reproducibility</div>
                 <div class="quarto-category">shiny</div>
               </div>
                   </div>
@@ -159,14 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p><a href="https://visibledata.co.uk/">Charlie Hadley</a> </p>
+               <p><a href="http://www.nathancunn.com/">Nathan Cunningham</a> </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 16, 2023</p>
+        <p class="date">January 19, 2017</p>
       </div>
     </div>
     
@@ -182,9 +180,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources:</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/talks/2023-05-16-interactive-data-visualisation/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2017-01-19-intro-shiny/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -193,28 +191,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>In this talk I introduce {htmlwidgets} - the collection of packages you wish you knew. With these packages you can create interactive charts, graphs, tables and maps all in R without needing to learn any JavaScript.</p>
-<p>On top of {htmlwidgets}, I will also demonstrate the fundamentals of using {shiny} to build server applications all with R - and show how to combine these with {htmlwidgets} to build impressive and beautiful tools.</p>
-<p>I have a background in reproducible research methodologies, so I will talk about how you can use these tools to create an end-to-end reproducible Open Data workflow. The same workflow used by the University of Oxford’s Interactive Data Network that I helped launch.</p>
 <section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<h2 class="anchored" data-anchor-id="resources">Resources:</h2>
 <ul>
-<li><a href="https://github.com/charliejhadley/talk_2023-05-16_rug-warwick_interactive-data-viz" target="_blank">GitHub repository</a> - slides and example code.</li>
+<li><p><a href="resources/intro_to_shiny.pdf">Talk slides</a></p></li>
+<li><p><a href="https://warwick.ac.uk/fac/sci/wdsi/events/wrug/resources/example_app.R">example Shiny app</a>&nbsp;<img src="https://warwick.ac.uk/fac/sci/wdsi/events/wrug/resources/ricon.png" class="img-fluid" alt="R script document icon"></p></li>
+<li><p><a href="http://shiny.rstudio.com/">Shiny official web site</a></p></li>
+<li><p><a href="https://www.shinyapps.io/">shinyapps.io</a> — share your Shiny applications online</p></li>
 </ul>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{hadley2023,
-  author = {Hadley, Charlie},
-  title = {Interactive {Data} {Visualisation}},
-  date = {2023-05-16},
-  url = {https://warwickrug.github.io/talks/2023-05-16-interactive-data-visualisation/},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{cunningham2017,
+  author = {Cunningham, Nathan},
+  title = {An Introduction to {Shiny}},
+  date = {2017-01-19},
+  url = {https://warwickrug.github.io/meetings/2017-01-19-intro-shiny/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-hadley2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Hadley, Charlie. 2023. <span>“Interactive Data Visualisation.”</span>
-May 16, 2023. <a href="https://warwickrug.github.io/talks/2023-05-16-interactive-data-visualisation/">https://warwickrug.github.io/talks/2023-05-16-interactive-data-visualisation/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-cunningham2017" class="csl-entry quarto-appendix-citeas" role="listitem">
+Cunningham, Nathan. 2017. <span>“An Introduction to Shiny.”</span>
+January 19, 2017. <a href="https://warwickrug.github.io/meetings/2017-01-19-intro-shiny/">https://warwickrug.github.io/meetings/2017-01-19-intro-shiny/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -620,4 +618,4 @@ May 16, 2023. <a href="https://warwickrug.github.io/talks/2023-05-16-interactive
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/talks/2023-05-16-interactive-data-visualisation/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2017-01-19-intro-shiny/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

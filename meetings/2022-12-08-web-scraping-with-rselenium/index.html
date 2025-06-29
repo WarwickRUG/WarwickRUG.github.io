@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Iain Emsley">
-<meta name="dcterms.date" content="2022-05-25">
+<meta name="author" content="Nicole Schwitter">
+<meta name="dcterms.date" content="2022-12-08">
+<meta name="description" content="Nicole Schwitter introduces how R can be used to collect data from web pages.">
 
-<title>Code Review – Warwick R-User Group</title>
+<title>Let R browse the web for you: An introduction to web-scraping with RSelenium – Warwick R-User Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html"> 
-<span class="menu-text">Talks</span></a>
+    <a class="nav-link" href="../../meetings.html"> 
+<span class="menu-text">Meetings</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -137,10 +138,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Code Review</h1>
-                                <div class="quarto-categories">
+      <h1 class="title">Let R browse the web for you: An introduction to web-scraping with RSelenium</h1>
+                  <div>
+        <div class="description">
+          <p>Nicole Schwitter introduces how R can be used to collect data from web pages.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">talks</div>
-                <div class="quarto-category">reviews</div>
+                <div class="quarto-category">web-scraping</div>
               </div>
                   </div>
   </div>
@@ -151,14 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Iain Emsley </p>
+               <p><a href="https://nschwitter.github.io/index.html">Nicole Schwitter</a> </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 25, 2022</p>
+        <p class="date">December 8, 2022</p>
       </div>
     </div>
     
@@ -174,9 +180,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources:</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/talks/2022-05-17-code-review/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2022-12-08-web-scraping-with-rselenium/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -185,24 +191,31 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p><strong>Speaker:</strong> Nicole Schwitter, PhD student, Department of Sociology, University of Warwick</p>
+<p><strong>Abstract:</strong> The rise of the internet and mass digitalisation have led to vast amounts of digital data in recent years. These novel digital sources of data are used to gain new insights into old and new questions of data-driven sciences: From election results to press releases, social media posts or user reviews, research now often makes use of data that is online. Many modern commercial websites await user input and/or display dynamic web content which is generated on the fly via JavaScript technologies. Standard techniques of web-scraping which are well-suited to collect information from static pages will fail in these instances. In such cases, it is necessary to automate the browser to visit websites, click buttons, and fill in forms by itself - a task the tool Selenium fulfils. This talk will give a brief overview of approaches towards web scraping and an introduction to the R package RSelenium. The presentation will highlight use cases of RSelenium, show its potential, and give a starting point to those who have never used it.</p>
 <section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources:</h2>
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li><a href="resources/Code_Review.pdf">Talk slides</a></li>
+<li><a href="resources/RSelenium_slides.pdf" target="_blank">Slides</a></li>
+<li><a href="resources/RSelenium.html" target="_blank">R Markdown workbook - HTML output</a></li>
+<li><a href="https://github.com/nschwitter/RSelenium-warwick/blob/main/RSelenium.Rmd" target="_blank">R Markdown workbook - source</a></li>
 </ul>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{emsley2022,
-  author = {Emsley, Iain},
-  title = {Code {Review}},
-  date = {2022-05-25},
-  url = {https://warwickrug.github.io/talks/2022-05-17-code-review/},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{schwitter2022,
+  author = {Schwitter, Nicole},
+  title = {Let {R} Browse the Web for You: {An} Introduction to
+    Web-Scraping with {RSelenium}},
+  date = {2022-12-08},
+  url = {https://warwickrug.github.io/meetings/2022-12-08-web-scraping-with-rselenium/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-emsley2022" class="csl-entry quarto-appendix-citeas" role="listitem">
-Emsley, Iain. 2022. <span>“Code Review.”</span> May 25, 2022. <a href="https://warwickrug.github.io/talks/2022-05-17-code-review/">https://warwickrug.github.io/talks/2022-05-17-code-review/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-schwitter2022" class="csl-entry quarto-appendix-citeas" role="listitem">
+Schwitter, Nicole. 2022. <span>“Let R Browse the Web for You: An
+Introduction to Web-Scraping with RSelenium.”</span> December 8, 2022.
+<a href="https://warwickrug.github.io/meetings/2022-12-08-web-scraping-with-rselenium/">https://warwickrug.github.io/meetings/2022-12-08-web-scraping-with-rselenium/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -608,4 +621,4 @@ Emsley, Iain. 2022. <span>“Code Review.”</span> May 25, 2022. <a href="https
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/talks/2022-05-17-code-review/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2022-12-08-web-scraping-with-rselenium/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
