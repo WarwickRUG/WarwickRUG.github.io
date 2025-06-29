@@ -1,0 +1,15 @@
+{
+  "hash": "6992621056d34d0a92c91aebb98f5a92",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Welcome to Warwick R User Group\"\ndescription: |\n  Welcome to our new blog, Warwick R User Group. We hope you enjoy \n  reading what we have to say!\nauthor:\n  - name: \"Heather Turner\" \n    url: https://www.heatherturner.net/\n    affiliation: University of Warwick\n    affiliation_url: https://warwick.ac.uk\n  - name: \"James Tripp\" \n    url: https://warwick.ac.uk/fac/arts/research/digitalhumanities/team/\n    affiliation: University of Warwick\n    affiliation_url: https://warwick.ac.uk\n  - name: \"Carlos Cámara\" \n    url: https://carloscamara.es/en\n    affiliation: University of Warwick\n    affiliation_url: https://warwick.ac.uk\ndate: 02-07-2022\nimage: \"media/logo_small.png\"\ncategories:\n  - announcements\ndraft: true\n---\n\n\n\n\nAfter some time without much activity, we're back with plenty of ideas!\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

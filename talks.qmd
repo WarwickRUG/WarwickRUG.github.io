@@ -1,8 +1,8 @@
 ---
-title: "Blog"
+title: "Talks"
 listing:
   contents: 
-    - "posts"
+    - "talks"
   sort: "date desc"
   type: default
   categories: true
