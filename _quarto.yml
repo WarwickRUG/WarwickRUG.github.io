@@ -18,7 +18,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - talks.qmd
+      - meetings.qmd
     tools:
       - icon: mastodon
         href: https://fosstodon.org/@WarwickRUG

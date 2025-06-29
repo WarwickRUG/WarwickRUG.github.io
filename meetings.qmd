@@ -1,8 +1,8 @@
 ---
-title: "Talks"
+title: "Meetings"
 listing:
   contents: 
-    - "talks"
+    - "meetings"
   sort: "date desc"
   type: default
   categories: true
