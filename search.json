@@ -1,171 +1,136 @@
 [
   {
-    "objectID": "posts/2023-11-23-fitting-wiggly-data/index.html",
-    "href": "posts/2023-11-23-fitting-wiggly-data/index.html",
+    "objectID": "talks/2023-11-23-fitting-wiggly-data/index.html",
+    "href": "talks/2023-11-23-fitting-wiggly-data/index.html",
     "title": "Fitting Wiggly Data: Generalized Additive Models",
     "section": "",
     "text": "This talk will feature Chris Mainey discussing the use of ‘Generalized Additive Models (GAMs)’ to fit regression models to ‘wiggly’ or non-linear data. Sometimes the relationships we are interested in are not a simple straight-line. Polynomial terms and combining them to for ‘splines’ will be introduced and then used in GAMs. This will be demonstrated in R as part of the talk. This will be an exciting talk for those wanting to deepen their knowledge of regression.\nFor in-person attendees, the talk will be followed by pizza/salad and soft drinks, thanks to our sponsors: the R Consortium."
   },
   {
-    "objectID": "posts/2023-11-23-fitting-wiggly-data/index.html#resources",
-    "href": "posts/2023-11-23-fitting-wiggly-data/index.html#resources",
+    "objectID": "talks/2023-11-23-fitting-wiggly-data/index.html#resources",
+    "href": "talks/2023-11-23-fitting-wiggly-data/index.html#resources",
     "title": "Fitting Wiggly Data: Generalized Additive Models",
     "section": "Resources",
     "text": "Resources\n\nGAM workshop for NHS-R Community Conference 2023 GitHub repo: https://github.com/chrismainey/GAMworkshop\nSlides: https://chrismainey.github.io/GAMworkshop/GAMworkshop.html"
   },
   {
-    "objectID": "posts/2023-11-23-fitting-wiggly-data/index.html#about-the-speaker",
-    "href": "posts/2023-11-23-fitting-wiggly-data/index.html#about-the-speaker",
+    "objectID": "talks/2023-11-23-fitting-wiggly-data/index.html#about-the-speaker",
+    "href": "talks/2023-11-23-fitting-wiggly-data/index.html#about-the-speaker",
     "title": "Fitting Wiggly Data: Generalized Additive Models",
     "section": "About the speaker",
     "text": "About the speaker\nChris Mainey is Head Data Scientist for NHS Birmingham and Solihull ICB. He has led analytics and data science teams in areas including hospital benchmarking, population health management, NHS commissioning, mortality statistics and patient safety. He completed his PhD in Applied Statistics and Machine Learning at UCL, focussing on modelling count data and applying natural language processing to NHS datasets. He is a Senior Fellow of the NHS-R Community and is keen on teaching and spreading data science skills, coding, statistics, and good analytical practise. He’s very fond of a good coffee, GAM models, and putting code on GitHub.\nThose interested in the NHS-R community may also want to see:\n\nNHS-R Community – Promoting the use of R in the NHS (nhsrcommunity.com)- open to researchers and anyone in public sector/health related fields.Join the Slack: https://nhsrcommunity.slack.com/\nGitHub: https://github.com/nhs-r-community\nNHS-R Conference material (more content published soon): https://www.youtube.com/channel/UCMwM-3tg_-Pbx8hKO78q5EA"
   },
   {
-    "objectID": "posts/2023-11-23-fitting-wiggly-data/index.html#photos",
-    "href": "posts/2023-11-23-fitting-wiggly-data/index.html#photos",
+    "objectID": "talks/2023-11-23-fitting-wiggly-data/index.html#photos",
+    "href": "talks/2023-11-23-fitting-wiggly-data/index.html#photos",
     "title": "Fitting Wiggly Data: Generalized Additive Models",
     "section": "Photos",
     "text": "Photos"
   },
   {
-    "objectID": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
-    "href": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
+    "objectID": "talks/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
+    "href": "talks/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
     "title": "Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption",
     "section": "",
     "text": "The COVID-19 pandemic changed the way people lived, worked, and studied around the world, with direct consequences for domestic energy use. In this talk I present our study which assessed the impact of COVID-19 lockdowns in the first two years of the pandemic on household electricity and gas use in England and Wales. I explain how I used R for the machine learning and how I made the figures (see .Rmd file for figure code).\nUsing data for 508 (electricity) and 326 (gas) homes, elastic net regression, neural network and extreme gradient boosting predictive models were trained and tested on pre-pandemic data. The most accurate model for each household was used to create counterfactuals (predictions in the absence of COVID-19) against which observed pandemic energy use was compared. Our analysis showed that on average (electricity; gas) consumption increased by (7.8%; 5.7%) in year 1 of the pandemic and by (2.2%; 0.2%) in year 2. The greatest increases were in the winter lockdown (January – March 2021) by 11.6% and 9.0% for electricity and gas, respectively. At the start of 2022 electricity use remained 2.0% higher while gas use was around 1.9% lower than predicted. Households with children showed the greatest increase in electricity consumption during lockdowns, followed by those with adults in work. Wealthier households increased their electricity consumption by more than the less wealthy and continued to use more than predicted throughout the two-year period while the less wealthy returned to pre-pandemic or lower consumption from summer 2021. Low dwelling efficiency was associated with a greater increase in energy consumption during the pandemic. Additionally, this study shows the value of different machine learning techniques for counterfactual modelling at the individual-dwelling level, and our approach can be used to robustly estimate the impact of other events and interventions."
   },
   {
-    "objectID": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html#resources",
-    "href": "posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html#resources",
+    "objectID": "talks/2023-03-08-impact-of-covid19-on-energy-consumption/index.html#resources",
+    "href": "talks/2023-03-08-impact-of-covid19-on-energy-consumption/index.html#resources",
     "title": "Using Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption",
     "section": "Resources",
     "text": "Resources\n\nSlides\nCode for figures\nJournal article: Zapata-Webborn, E et al (2023). The impact of COVID-19 on household energy consumption in England and Wales from April 2020 to March 2022, Energy and Buildings, 297:113428, https://doi.org/10.1016/j.enbuild.2023.113428."
   },
   {
-    "objectID": "posts/2022-09-15-R-and-Docker/index.html",
-    "href": "posts/2022-09-15-R-and-Docker/index.html",
+    "objectID": "talks/2022-09-15-R-and-Docker/index.html",
+    "href": "talks/2022-09-15-R-and-Docker/index.html",
     "title": "R and Docker",
     "section": "",
     "text": "In this online event, we continue the reproducibility theme from our last meetup, with James Tripp introducing Docker containers and how they can be used with R. See full details below.\nSpeaker James Tripp, Senior Research Software Engineer, Information and Digital Group, University of Warwick\nAbstract Docker is a container technology which allows you to specify and build a compute environment. You can run the environment on your local machine and both the instructions for creating the environment and the environment itself can be shared. In this talk I will (a) introduce containers, (b) discuss a worked examples of using Docker with R, and (c) consider how containers can help us do better research. Hopefully this presentation will help those of you who have never used Docker to consider if you want to use Docker in your own work and where to start."
   },
   {
-    "objectID": "posts/2022-09-15-R-and-Docker/index.html#resources",
-    "href": "posts/2022-09-15-R-and-Docker/index.html#resources",
+    "objectID": "talks/2022-09-15-R-and-Docker/index.html#resources",
+    "href": "talks/2022-09-15-R-and-Docker/index.html#resources",
     "title": "R and Docker",
     "section": "Resources",
     "text": "Resources\n\nSlides\nSource code"
   },
   {
-    "objectID": "posts/2022-05-17-code-review/index.html",
-    "href": "posts/2022-05-17-code-review/index.html",
+    "objectID": "talks/2022-05-17-code-review/index.html",
+    "href": "talks/2022-05-17-code-review/index.html",
     "title": "Code Review",
     "section": "",
     "text": "Talk slides"
   },
   {
-    "objectID": "posts/2022-05-17-code-review/index.html#resources",
-    "href": "posts/2022-05-17-code-review/index.html#resources",
+    "objectID": "talks/2022-05-17-code-review/index.html#resources",
+    "href": "talks/2022-05-17-code-review/index.html#resources",
     "title": "Code Review",
     "section": "",
     "text": "Talk slides"
   },
   {
-    "objectID": "posts/2022-03-09-bnmonitorpackage/index.html",
-    "href": "posts/2022-03-09-bnmonitorpackage/index.html",
+    "objectID": "talks/2022-03-09-bnmonitorpackage/index.html",
+    "href": "talks/2022-03-09-bnmonitorpackage/index.html",
     "title": "Sensitivity and Robustness Analysis in Bayesian Networks with the ‘bnmonitor’ R package",
     "section": "",
     "text": "Talk slides\nbnmonitor package on CRAN"
   },
   {
-    "objectID": "posts/2022-03-09-bnmonitorpackage/index.html#resources",
-    "href": "posts/2022-03-09-bnmonitorpackage/index.html#resources",
+    "objectID": "talks/2022-03-09-bnmonitorpackage/index.html#resources",
+    "href": "talks/2022-03-09-bnmonitorpackage/index.html#resources",
     "title": "Sensitivity and Robustness Analysis in Bayesian Networks with the ‘bnmonitor’ R package",
     "section": "",
     "text": "Talk slides\nbnmonitor package on CRAN"
   },
   {
-    "objectID": "posts/2017-02-16-grammar-graphics/index.html",
-    "href": "posts/2017-02-16-grammar-graphics/index.html",
+    "objectID": "talks/2017-02-16-grammar-graphics/index.html",
+    "href": "talks/2017-02-16-grammar-graphics/index.html",
     "title": "The Grammar of Graphics: an introduction to ggplot2",
     "section": "",
     "text": "Talk slides\nggplot2 package documentation\nggChernoff package on GitHub"
   },
   {
-    "objectID": "posts/2017-02-16-grammar-graphics/index.html#resources",
-    "href": "posts/2017-02-16-grammar-graphics/index.html#resources",
+    "objectID": "talks/2017-02-16-grammar-graphics/index.html#resources",
+    "href": "talks/2017-02-16-grammar-graphics/index.html#resources",
     "title": "The Grammar of Graphics: an introduction to ggplot2",
     "section": "",
     "text": "Talk slides\nggplot2 package documentation\nggChernoff package on GitHub"
   },
   {
-    "objectID": "posts/2017-02-02-animated-plots/index.html",
-    "href": "posts/2017-02-02-animated-plots/index.html",
+    "objectID": "talks/2017-02-02-animated-plots/index.html",
+    "href": "talks/2017-02-02-animated-plots/index.html",
     "title": "Animated plots",
     "section": "",
     "text": "Talk slides\nanimation package on CRAN\nanimation package on github"
   },
   {
-    "objectID": "posts/2017-02-02-animated-plots/index.html#resources",
-    "href": "posts/2017-02-02-animated-plots/index.html#resources",
+    "objectID": "talks/2017-02-02-animated-plots/index.html#resources",
+    "href": "talks/2017-02-02-animated-plots/index.html#resources",
     "title": "Animated plots",
     "section": "",
     "text": "Talk slides\nanimation package on CRAN\nanimation package on github"
   },
   {
-    "objectID": "posts/2017-01-19-emojiplots/index.html",
-    "href": "posts/2017-01-19-emojiplots/index.html",
+    "objectID": "talks/2017-01-19-emojiplots/index.html",
+    "href": "talks/2017-01-19-emojiplots/index.html",
     "title": "Procrastinating in R: emoji plots",
     "section": "",
     "text": "Talk slides\nemojifont package on CRAN\nemoGG package on GitHub"
   },
   {
-    "objectID": "posts/2017-01-19-emojiplots/index.html#resources",
-    "href": "posts/2017-01-19-emojiplots/index.html#resources",
+    "objectID": "talks/2017-01-19-emojiplots/index.html#resources",
+    "href": "talks/2017-01-19-emojiplots/index.html#resources",
     "title": "Procrastinating in R: emoji plots",
     "section": "",
     "text": "Talk slides\nemojifont package on CRAN\nemoGG package on GitHub"
   },
   {
-    "objectID": "people/chris-mainey.html",
-    "href": "people/chris-mainey.html",
-    "title": "Chris Mainey",
+    "objectID": "people/ella-kaye.html",
+    "href": "people/ella-kaye.html",
+    "title": "Ella Kaye",
     "section": "",
-    "text": "Biography\nChris Mainey is a data scientist and analytical leader in the UK National Health Service (NHS). He has led analytical teams in Patient Safety at NHSE, national benchmarking at University Hospitals Birmingham and has recently joined the specialist analytics team at North Central London ICB. He has experience in patient safety, public health, clinical networks, acute trust informatics, and leading analytical and data science teams.\nChris' work focuses on modelling NHS data, with strong expertise in R and SQL, and experience with a variety of statistical modelling and machine learning techniques. He completed his PhD at UCL, on modelling NHS incident reporting data using quantitative methods and NLP/text mining.\nChris is an experienced trainer, presenter, and post-grad teacher, keen on communicating health data, statistics and ML methods to a variety of audiences. He is a member of the NHS-R community Technical Advisory Group, has authored and maintains several R packages, and is keen to promote R awareness and adoption in the NHS, as well as the wider data science skill set.\nThis is a personal blog/website and does not reflect the opinions of NHS England or any other organisation."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Warwick R User Group",
-    "section": "",
-    "text": "Warwick R-user group is for everybody interested in R, the programming language for statistical computing, data science, visualisation and reproducible reporting.\nWarwick R User Group meets every 2 months to discuss R-related topics. At each session, speakers present interesting R packages (and how to make your own), share tips and tricks and offer advice to new R users.\nEveryone is welcome, regardless of R programming experience, from across or outside Warwick University. For further information, visit our Meetup.com page or contact a member of the WRUG committee.\n\nWarwick R User Group is supported by the R Consortium. We follow the R Consortium R Community code of conduct."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About us",
-    "section": "",
-    "text": "Warwick R User Group meets every 2 months to discuss R-related topics. At each session, speakers present interesting R packages (and how to make your own), share tips and tricks and offer advice to new R users.\nEveryone is welcome, regardless of R programming experience, from across or outside Warwick University. For further information, visit our Meetup.com page or contact a member of the WRUG committee."
-  },
-  {
-    "objectID": "about.html#committee",
-    "href": "about.html#committee",
-    "title": "About us",
-    "section": "Committee",
-    "text": "Committee\n\n\n\n\n\n\n\n\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\n\nChris Mainey\n\n\n\n\n\n\n\n\n\n\n\n\n\nElla Kaye\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeather Turner\n\n\n\n\n\n\n\n\n\n\n\n\n\nJames Tripp\n\n\n\n\n\n\n\nNo matching items\n\n\n\nFormer members\nWe would like to thank former WRUG committee members (in alphabetical order):\n\nAditi Shenvi\nDavid Selby\nLewis Rendell"
-  },
-  {
-    "objectID": "about.html#support",
-    "href": "about.html#support",
-    "title": "About us",
-    "section": "Support",
-    "text": "Support\n\n\n\nR Consortium logo\n\n\nWarwick R User Group is supported by the R Consortium.\nWe follow the R Consortium R Community code of conduct."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Fitting Wiggly Data: Generalized Additive Models\n\n\n\n\n\n\ntalks\n\n\nmodels\n\n\n\nUsing ‘Generalized Additive Models (GAMs)’ to fit regression models to ‘wiggly’ or non-linear data. \n\n\n\n\n\nNov 26, 2023\n\n\nChris Mainey\n\n\n\n\n\n\n\n\n\n\n\n\nInteractive Data Visualisation\n\n\n\n\n\n\ntalks\n\n\ndataviz\n\n\nreproducibility\n\n\nshiny\n\n\n\nUsing {htmlwidgets} with/without {shiny} in reproducible Open Data workflows. \n\n\n\n\n\nMay 16, 2023\n\n\nCharlie Hadley\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption\n\n\n\n\n\n\ntalks\n\n\nmodelling\n\n\n\nUsing elastic net regression and neural network models to predict what would have happened in the absence of the pandemic, and comparing these ‘counterfactuals’ with observed electricity and gas consumption in several hundred households. \n\n\n\n\n\nMar 8, 2023\n\n\nEllen Zapata-Webborn\n\n\n\n\n\n\n\n\n\n\n\n\nLet R browse the web for you: An introduction to web-scraping with RSelenium\n\n\n\n\n\n\ntalks\n\n\nweb-scraping\n\n\n\nNicole Schwitter introduces how R can be used to collect data from web pages. \n\n\n\n\n\nDec 8, 2022\n\n\nNicole Schwitter\n\n\n\n\n\n\n\n\n\n\n\n\nR and Docker\n\n\n\n\n\n\ntalks\n\n\nreproducibility\n\n\n\nIn this online event, we continue the reproducibility theme from our last meetup, with James Tripp introducing Docker containers and how they can be used with R. See full details below. \n\n\n\n\n\nSep 15, 2022\n\n\nJames Tripp\n\n\n\n\n\n\n\n\n\n\n\n\nManaging R script dependencies: automagic and renv\n\n\n\n\n\n\ntalks\n\n\nreproducibility\n\n\n\nIn this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv} \n\n\n\n\n\nJul 14, 2022\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\nCode Review\n\n\n\n\n\n\ntalks\n\n\nreviews\n\n\n\n\n\n\n\n\n\nMay 25, 2022\n\n\nIain Emsley\n\n\n\n\n\n\n\n\n\n\n\n\nSensitivity and Robustness Analysis in Bayesian Networks with the ‘bnmonitor’ R package\n\n\n\n\n\n\ntalks\n\n\ndataviz\n\n\n\n\n\n\n\n\n\nMar 9, 2022\n\n\nManuele Leonelli\n\n\n\n\n\n\n\n\n\n\n\n\nLong Term Gas Supply & Demand Scenarios\n\n\n\n\n\n\ntalks\n\n\ndataviz\n\n\n\n\n\n\n\n\n\nMar 9, 2022\n\n\nKasia Taylor and Ben Dickel\n\n\n\n\n\n\n\n\n\n\n\n\nThe Grammar of Graphics: an introduction to ggplot2\n\n\n\n\n\n\ntalks\n\n\ndataviz\n\n\n\n\n\n\n\n\n\nFeb 16, 2017\n\n\nDavid Selby\n\n\n\n\n\n\n\n\n\n\n\n\nAnimated plots\n\n\n\n\n\n\ntalks\n\n\ndataviz\n\n\n\nAnimation is an R package to create and export animations to a variety of formats (HTML/JS, GIF, Video, PDF), and it also serves as a gallery of statistical animations. \n\n\n\n\n\nFeb 2, 2017\n\n\nRachel Lynne Wilkerson\n\n\n\n\n\n\n\n\n\n\n\n\nPitfalls of ‘dynamite’ plunger plots\n\n\n\n\n\n\ntalks\n\n\ndataviz\n\n\n\n\n\n\n\n\n\nFeb 2, 2017\n\n\nKenneth Lim\n\n\n\n\n\n\n\n\n\n\n\n\nProcrastinating in R: emoji plots\n\n\n\n\n\n\ntalks\n\n\ndataviz\n\n\n\nUse emojifont and emoGG in your plots. \n\n\n\n\n\nJan 19, 2017\n\n\nAlejandra Avalos-Pacheco\n\n\n\n\n\n\n\n\n\n\n\n\nAn introduction to Shiny\n\n\n\n\n\n\ntalks\n\n\nshiny\n\n\n\nA beginner’s guide to Shiny \n\n\n\n\n\nJan 19, 2017\n\n\nNathan Cunningham\n\n\n\n\n\n\nNo matching items"
+    "text": "Ella is a Research Software Engineer in the Department of Statistics at the University of Warwick, UK. She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project. She also runs rainbowR, a community that supports, promotes and connects LGBTQ+ people who code in the R language."
   },
   {
     "objectID": "people/carlos-camara.html",
@@ -196,85 +161,120 @@
     "text": "Research Profile\nThe combination of such diverse experiences, interests, and skills has articulated my research agenda within the Urban Studies, structured around two pillars: 1) the commodifications between cities, technology, and society, and 2) co-production and collective-action. So far, I have applied a spatial reading with a social perspective to the topic of urban, spatial inequities, and, more specifically, on urban mobility for disabled people and urban commons to find ways in which cities can be more resilient and egalitarian.\nWorking at CIM as Senior Research Software Engineer has given me the opportunity of bridging my passions by applying technology and software through an social perspective and within a collaborative setting to the existing diverse and interdisciplinar research culture and teaching of the Centre.\nAreas of Interest: Urban Studies, Open Science, Commons, Co-production, Data Visualisation, Spatial Justice"
   },
   {
-    "objectID": "people/ella-kaye.html",
-    "href": "people/ella-kaye.html",
-    "title": "Ella Kaye",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About us",
     "section": "",
-    "text": "Ella is a Research Software Engineer in the Department of Statistics at the University of Warwick, UK. She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project. She also runs rainbowR, a community that supports, promotes and connects LGBTQ+ people who code in the R language."
+    "text": "Warwick R User Group meets every 2 months to discuss R-related topics. At each session, speakers present interesting R packages (and how to make your own), share tips and tricks and offer advice to new R users.\nEveryone is welcome, regardless of R programming experience, from across or outside Warwick University. For further information, visit our Meetup.com page or contact a member of the WRUG committee."
   },
   {
-    "objectID": "posts/2017-01-19-intro-shiny/index.html",
-    "href": "posts/2017-01-19-intro-shiny/index.html",
+    "objectID": "about.html#committee",
+    "href": "about.html#committee",
+    "title": "About us",
+    "section": "Committee",
+    "text": "Committee\n\n\n\n\n\n\n\n\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\nChris Mainey\n\n\n\n\n\n\n\n\n\n\n\n\nElla Kaye\n\n\n\n\n\n\n\n\n\n\n\n\nHeather Turner\n\n\n\n\n\n\n\n\n\n\n\n\nJames Tripp\n\n\n\n\n\nNo matching items\n\n\nFormer members\nWe would like to thank former WRUG committee members (in alphabetical order):\n\nAditi Shenvi\nDavid Selby\nLewis Rendell"
+  },
+  {
+    "objectID": "about.html#support",
+    "href": "about.html#support",
+    "title": "About us",
+    "section": "Support",
+    "text": "Support\n\n\n\nR Consortium logo\n\n\nWarwick R User Group is supported by the R Consortium.\nWe follow the R Consortium R Community code of conduct."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Warwick R User Group",
+    "section": "",
+    "text": "Warwick R-user group is for everybody interested in R, the programming language for statistical computing, data science, visualisation and reproducible reporting.\nWarwick R User Group meets every 2 months to discuss R-related topics. At each session, speakers present interesting R packages (and how to make your own), share tips and tricks and offer advice to new R users.\nEveryone is welcome, regardless of R programming experience, from across or outside Warwick University. For further information, visit our Meetup.com page or contact a member of the WRUG committee.\n\nWarwick R User Group is supported by the R Consortium. We follow the R Consortium R Community code of conduct."
+  },
+  {
+    "objectID": "people/chris-mainey.html",
+    "href": "people/chris-mainey.html",
+    "title": "Chris Mainey",
+    "section": "",
+    "text": "Biography\nChris Mainey is a data scientist and analytical leader in the UK National Health Service (NHS). He has led analytical teams in Patient Safety at NHSE, national benchmarking at University Hospitals Birmingham and has recently joined the specialist analytics team at North Central London ICB. He has experience in patient safety, public health, clinical networks, acute trust informatics, and leading analytical and data science teams.\nChris' work focuses on modelling NHS data, with strong expertise in R and SQL, and experience with a variety of statistical modelling and machine learning techniques. He completed his PhD at UCL, on modelling NHS incident reporting data using quantitative methods and NLP/text mining.\nChris is an experienced trainer, presenter, and post-grad teacher, keen on communicating health data, statistics and ML methods to a variety of audiences. He is a member of the NHS-R community Technical Advisory Group, has authored and maintains several R packages, and is keen to promote R awareness and adoption in the NHS, as well as the wider data science skill set.\nThis is a personal blog/website and does not reflect the opinions of NHS England or any other organisation."
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Fitting Wiggly Data: Generalized Additive Models\n\n\n\ntalks\n\nmodels\n\n\n\nUsing ‘Generalized Additive Models (GAMs)’ to fit regression models to ‘wiggly’ or non-linear data.\n\n\n\n\n\nNov 26, 2023\n\n\nChris Mainey\n\n\n\n\n\n\n\n\n\n\n\n\nInteractive Data Visualisation\n\n\n\ntalks\n\ndataviz\n\nreproducibility\n\nshiny\n\n\n\nUsing {htmlwidgets} with/without {shiny} in reproducible Open Data workflows.\n\n\n\n\n\nMay 16, 2023\n\n\nCharlie Hadley\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Predictive Modelling to Study the Impact of COVID-19 on Energy Consumption\n\n\n\ntalks\n\nmodelling\n\n\n\nUsing elastic net regression and neural network models to predict what would have happened in the absence of the pandemic, and comparing these ‘counterfactuals’ with observed electricity and gas consumption in several hundred households.\n\n\n\n\n\nMar 8, 2023\n\n\nEllen Zapata-Webborn\n\n\n\n\n\n\n\n\n\n\n\n\nLet R browse the web for you: An introduction to web-scraping with RSelenium\n\n\n\ntalks\n\nweb-scraping\n\n\n\nNicole Schwitter introduces how R can be used to collect data from web pages.\n\n\n\n\n\nDec 8, 2022\n\n\nNicole Schwitter\n\n\n\n\n\n\n\n\n\n\n\n\nR and Docker\n\n\n\ntalks\n\nreproducibility\n\n\n\nIn this online event, we continue the reproducibility theme from our last meetup, with James Tripp introducing Docker containers and how they can be used with R. See full details below.\n\n\n\n\n\nSep 15, 2022\n\n\nJames Tripp\n\n\n\n\n\n\n\n\n\n\n\n\nManaging R script dependencies: automagic and renv\n\n\n\ntalks\n\nreproducibility\n\n\n\nIn this first session of the reproducibility series, we introduce two methods to deal with library dependencies: {automagic} and {renv}\n\n\n\n\n\nJul 14, 2022\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\nCode Review\n\n\n\ntalks\n\nreviews\n\n\n\n\n\n\n\n\n\nMay 25, 2022\n\n\nIain Emsley\n\n\n\n\n\n\n\n\n\n\n\n\nSensitivity and Robustness Analysis in Bayesian Networks with the ‘bnmonitor’ R package\n\n\n\ntalks\n\ndataviz\n\n\n\n\n\n\n\n\n\nMar 9, 2022\n\n\nManuele Leonelli\n\n\n\n\n\n\n\n\n\n\n\n\nLong Term Gas Supply & Demand Scenarios\n\n\n\ntalks\n\ndataviz\n\n\n\n\n\n\n\n\n\nMar 9, 2022\n\n\nKasia Taylor and Ben Dickel\n\n\n\n\n\n\n\n\n\n\n\n\nThe Grammar of Graphics: an introduction to ggplot2\n\n\n\ntalks\n\ndataviz\n\n\n\n\n\n\n\n\n\nFeb 16, 2017\n\n\nDavid Selby\n\n\n\n\n\n\n\n\n\n\n\n\nAnimated plots\n\n\n\ntalks\n\ndataviz\n\n\n\nAnimation is an R package to create and export animations to a variety of formats (HTML/JS, GIF, Video, PDF), and it also serves as a gallery of statistical animations.\n\n\n\n\n\nFeb 2, 2017\n\n\nRachel Lynne Wilkerson\n\n\n\n\n\n\n\n\n\n\n\n\nPitfalls of ‘dynamite’ plunger plots\n\n\n\ntalks\n\ndataviz\n\n\n\n\n\n\n\n\n\nFeb 2, 2017\n\n\nKenneth Lim\n\n\n\n\n\n\n\n\n\n\n\n\nProcrastinating in R: emoji plots\n\n\n\ntalks\n\ndataviz\n\n\n\nUse emojifont and emoGG in your plots.\n\n\n\n\n\nJan 19, 2017\n\n\nAlejandra Avalos-Pacheco\n\n\n\n\n\n\n\n\n\n\n\n\nAn introduction to Shiny\n\n\n\ntalks\n\nshiny\n\n\n\nA beginner’s guide to Shiny\n\n\n\n\n\nJan 19, 2017\n\n\nNathan Cunningham\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/2017-01-19-intro-shiny/index.html",
+    "href": "talks/2017-01-19-intro-shiny/index.html",
     "title": "An introduction to Shiny",
     "section": "",
     "text": "Talk slides\nexample Shiny app \nShiny official web site\nshinyapps.io — share your Shiny applications online"
   },
   {
-    "objectID": "posts/2017-01-19-intro-shiny/index.html#resources",
-    "href": "posts/2017-01-19-intro-shiny/index.html#resources",
+    "objectID": "talks/2017-01-19-intro-shiny/index.html#resources",
+    "href": "talks/2017-01-19-intro-shiny/index.html#resources",
     "title": "An introduction to Shiny",
     "section": "",
     "text": "Talk slides\nexample Shiny app \nShiny official web site\nshinyapps.io — share your Shiny applications online"
   },
   {
-    "objectID": "posts/2017-02-02-dynamite-plunger-plots/index.html",
-    "href": "posts/2017-02-02-dynamite-plunger-plots/index.html",
+    "objectID": "talks/2017-02-02-dynamite-plunger-plots/index.html",
+    "href": "talks/2017-02-02-dynamite-plunger-plots/index.html",
     "title": "Pitfalls of ‘dynamite’ plunger plots",
     "section": "",
     "text": "Talk slides \nRelevant paper: Error Bars Considered Harmful"
   },
   {
-    "objectID": "posts/2017-02-02-dynamite-plunger-plots/index.html#resources",
-    "href": "posts/2017-02-02-dynamite-plunger-plots/index.html#resources",
+    "objectID": "talks/2017-02-02-dynamite-plunger-plots/index.html#resources",
+    "href": "talks/2017-02-02-dynamite-plunger-plots/index.html#resources",
     "title": "Pitfalls of ‘dynamite’ plunger plots",
     "section": "",
     "text": "Talk slides \nRelevant paper: Error Bars Considered Harmful"
   },
   {
-    "objectID": "posts/2022-03-09-nationalgrid/index.html",
-    "href": "posts/2022-03-09-nationalgrid/index.html",
+    "objectID": "talks/2022-03-09-nationalgrid/index.html",
+    "href": "talks/2022-03-09-nationalgrid/index.html",
     "title": "Long Term Gas Supply & Demand Scenarios",
     "section": "",
     "text": "Talk slides"
   },
   {
-    "objectID": "posts/2022-03-09-nationalgrid/index.html#resources",
-    "href": "posts/2022-03-09-nationalgrid/index.html#resources",
+    "objectID": "talks/2022-03-09-nationalgrid/index.html#resources",
+    "href": "talks/2022-03-09-nationalgrid/index.html#resources",
     "title": "Long Term Gas Supply & Demand Scenarios",
     "section": "",
     "text": "Talk slides"
   },
   {
-    "objectID": "posts/2022-07-14-dependencies/index.html",
-    "href": "posts/2022-07-14-dependencies/index.html",
+    "objectID": "talks/2022-07-14-dependencies/index.html",
+    "href": "talks/2022-07-14-dependencies/index.html",
     "title": "Managing R script dependencies: automagic and renv",
     "section": "",
-    "text": "At the end of our previous presentation by Iain Emsley on code review we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.\nIn order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box {automagic} and the more complex, yet backed up by RStudio, {renv}\nAt the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.\n\nYou can check the standalone Slides here and Source code\n\n\n\nCitationBibTeX citation:@online{cámara-menoyo2022,\n  author = {Cámara-Menoyo, Carlos},\n  title = {Managing {R} Script Dependencies: Automagic and Renv},\n  date = {2022-07-14},\n  url = {https://warwickrug.github.io/posts/2022-07-14-dependencies},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCámara-Menoyo, Carlos. 2022. “Managing R Script Dependencies:\nAutomagic and Renv.” July 14, 2022. https://warwickrug.github.io/posts/2022-07-14-dependencies."
+    "text": "At the end of our previous presentation by Iain Emsley on code review we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.\nIn order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box {automagic} and the more complex, yet backed up by RStudio, {renv}\nAt the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.\n\nYou can check the standalone Slides here and Source code\n\n\n\nCitationBibTeX citation:@online{cámara-menoyo2022,\n  author = {Cámara-Menoyo, Carlos},\n  title = {Managing {R} Script Dependencies: Automagic and Renv},\n  date = {2022-07-14},\n  url = {https://warwickrug.github.io/talks/2022-07-14-dependencies/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCámara-Menoyo, Carlos. 2022. “Managing R Script Dependencies:\nAutomagic and Renv.” July 14, 2022. https://warwickrug.github.io/talks/2022-07-14-dependencies/."
   },
   {
-    "objectID": "posts/2022-12-08-web-scraping-with-rselenium/index.html",
-    "href": "posts/2022-12-08-web-scraping-with-rselenium/index.html",
+    "objectID": "talks/2022-12-08-web-scraping-with-rselenium/index.html",
+    "href": "talks/2022-12-08-web-scraping-with-rselenium/index.html",
     "title": "Let R browse the web for you: An introduction to web-scraping with RSelenium",
     "section": "",
     "text": "Speaker: Nicole Schwitter, PhD student, Department of Sociology, University of Warwick\nAbstract: The rise of the internet and mass digitalisation have led to vast amounts of digital data in recent years. These novel digital sources of data are used to gain new insights into old and new questions of data-driven sciences: From election results to press releases, social media posts or user reviews, research now often makes use of data that is online. Many modern commercial websites await user input and/or display dynamic web content which is generated on the fly via JavaScript technologies. Standard techniques of web-scraping which are well-suited to collect information from static pages will fail in these instances. In such cases, it is necessary to automate the browser to visit websites, click buttons, and fill in forms by itself - a task the tool Selenium fulfils. This talk will give a brief overview of approaches towards web scraping and an introduction to the R package RSelenium. The presentation will highlight use cases of RSelenium, show its potential, and give a starting point to those who have never used it."
   },
   {
-    "objectID": "posts/2022-12-08-web-scraping-with-rselenium/index.html#resources",
-    "href": "posts/2022-12-08-web-scraping-with-rselenium/index.html#resources",
+    "objectID": "talks/2022-12-08-web-scraping-with-rselenium/index.html#resources",
+    "href": "talks/2022-12-08-web-scraping-with-rselenium/index.html#resources",
     "title": "Let R browse the web for you: An introduction to web-scraping with RSelenium",
     "section": "Resources",
     "text": "Resources\n\nSlides\nR Markdown workbook - HTML output\nR Markdown workbook - source"
   },
   {
-    "objectID": "posts/2023-05-16-interactive-data-visualisation/index.html",
-    "href": "posts/2023-05-16-interactive-data-visualisation/index.html",
+    "objectID": "talks/2023-05-16-interactive-data-visualisation/index.html",
+    "href": "talks/2023-05-16-interactive-data-visualisation/index.html",
     "title": "Interactive Data Visualisation",
     "section": "",
     "text": "In this talk I introduce {htmlwidgets} - the collection of packages you wish you knew. With these packages you can create interactive charts, graphs, tables and maps all in R without needing to learn any JavaScript.\nOn top of {htmlwidgets}, I will also demonstrate the fundamentals of using {shiny} to build server applications all with R - and show how to combine these with {htmlwidgets} to build impressive and beautiful tools.\nI have a background in reproducible research methodologies, so I will talk about how you can use these tools to create an end-to-end reproducible Open Data workflow. The same workflow used by the University of Oxford’s Interactive Data Network that I helped launch."
   },
   {
-    "objectID": "posts/2023-05-16-interactive-data-visualisation/index.html#resources",
-    "href": "posts/2023-05-16-interactive-data-visualisation/index.html#resources",
+    "objectID": "talks/2023-05-16-interactive-data-visualisation/index.html#resources",
+    "href": "talks/2023-05-16-interactive-data-visualisation/index.html#resources",
     "title": "Interactive Data Visualisation",
     "section": "Resources",
     "text": "Resources\n\nGitHub repository - slides and example code."

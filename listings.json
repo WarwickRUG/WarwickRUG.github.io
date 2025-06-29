@@ -10,22 +10,22 @@
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/talks.html",
     "items": [
-      "/posts/2023-11-23-fitting-wiggly-data/index.html",
-      "/posts/2023-05-16-interactive-data-visualisation/index.html",
-      "/posts/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
-      "/posts/2022-12-08-web-scraping-with-rselenium/index.html",
-      "/posts/2022-09-15-R-and-Docker/index.html",
-      "/posts/2022-07-14-dependencies/index.html",
-      "/posts/2022-05-17-code-review/index.html",
-      "/posts/2022-03-09-bnmonitorpackage/index.html",
-      "/posts/2022-03-09-nationalgrid/index.html",
-      "/posts/2017-02-16-grammar-graphics/index.html",
-      "/posts/2017-02-02-animated-plots/index.html",
-      "/posts/2017-02-02-dynamite-plunger-plots/index.html",
-      "/posts/2017-01-19-emojiplots/index.html",
-      "/posts/2017-01-19-intro-shiny/index.html"
+      "/talks/2023-11-23-fitting-wiggly-data/index.html",
+      "/talks/2023-05-16-interactive-data-visualisation/index.html",
+      "/talks/2023-03-08-impact-of-covid19-on-energy-consumption/index.html",
+      "/talks/2022-12-08-web-scraping-with-rselenium/index.html",
+      "/talks/2022-09-15-R-and-Docker/index.html",
+      "/talks/2022-07-14-dependencies/index.html",
+      "/talks/2022-05-17-code-review/index.html",
+      "/talks/2022-03-09-bnmonitorpackage/index.html",
+      "/talks/2022-03-09-nationalgrid/index.html",
+      "/talks/2017-02-16-grammar-graphics/index.html",
+      "/talks/2017-02-02-animated-plots/index.html",
+      "/talks/2017-02-02-dynamite-plunger-plots/index.html",
+      "/talks/2017-01-19-emojiplots/index.html",
+      "/talks/2017-01-19-intro-shiny/index.html"
     ]
   }
 ]
