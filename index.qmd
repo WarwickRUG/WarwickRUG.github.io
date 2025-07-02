@@ -32,11 +32,7 @@ Everyone is welcome, regardless of R programming experience, from across or outs
 Warwick R User Group is supported by the [R Consortium](https://www.r-consortium.org/).
 We follow the R Consortium [R Community code of conduct](https://wiki.r-consortium.org/view/R_Consortium_and_the_R_Community_Code_of_Conduct).
 
-```{r, out.width = "50%"}
-#| echo: false
-#| eval: true
-#| fig-alt: "R Consortium logo"
-knitr::include_graphics('media/RConsortium_logo.webp')
-```
+
+![](media/RConsortium_logo.webp){width="50%"}
 
 <a rel="me" href="https://fosstodon.org/@WarwickRUG"></a>
