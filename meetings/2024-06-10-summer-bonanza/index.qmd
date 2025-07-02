@@ -1,7 +1,7 @@
 ---
 title: "Summer Bonanza: Warwick Branding | Marketing Analytics | Maps | Clinical Trials"
 description: |
-  XXX
+  A bumper meeting with four talks!
 author:
   - name: Ella Kaye
     url: https://ellakaye.co.uk
@@ -19,7 +19,7 @@ categories:
   - marketing analytics
   - clinical trials
 image: featured.webp
-draft: true
+draft: false
 lightbox: true
 ---
 
@@ -58,17 +58,19 @@ Ella is a Research Software Engineer in the Department of Statistics at the Univ
 
 ## Jeremy Horne (DataCove) *Does advertising work? How to measure the long-term impact of our marketing investments*
 
-ABSTRACT
-
 ### Resources
 
 - [slides](resources/Does-advertising-work.pptx)
+- [DataCove](https://datacove.co.uk)
 
 ### About the speaker
 
+I am the founder of Datacove; your Data and analytics partner, specialising in customer analytics (unearthing your most valuable customers), marketing analytics (to maximise campaign performance) and process automation (automating your most time commanding tasks). I have 20 years of industry experience across a wide range of business sectors including charity, cyber security, fashion, financial services, FMCG, government, hospitality, legal, leisure and travel.
+
+I'm an advanced user of the R programming language, so much so that people often call me "Mr R" and (in combination with my love of public speaking) I currently run R community user groups across the UK in Brighton, Bristol, Birmingham, London, Manchester and Portsmouth as well as organising EARL, the UK's biggest R & Python conference, which takes place over three days in September. Previous to running EARL, I have also spoken at the conference on five occasions in 2016, 2018, 2019, 2020 and 2022.
+
 ## Carlos Cámara-Menoyo (Centre for Interdisciplinary Methodologies, Warwick) *Mapping and the geospatial ecosystem in R*
 
-ABSTRACT
 
 ### Resources
 
@@ -87,11 +89,11 @@ My multiple research interests are framed within the Urban Studies, and more spe
 
 ## Luke Ouma (AstraZeneca) *Simulation studies in R: A case of developing novel/efficient methods for clinical trial design.*
 
-ABSTRACT
-
 ### Resources
 
 - [slides](resources/clinical-trials.pdf)
 - [GitHub](https://github.com/oondijo/multipleBiomarkers)
 
 ### About the speaker
+
+Luke is a Medical statistician with experience in design of studies and analysis of data in different therapeutic areas. His research largely focuses on the development of novel Bayesian methods to improve the design and analysis of precision medicine trials—mainly Master protocols (umbrella, basket, and platform trials). Beyond this, he is keen on linking up with fellow researchers aiming to leverage the power of data to improve decision-making in health and care particularly in SSA, and developing the capacity of young statisticians through training (Msc, PhD, postdocs ).
