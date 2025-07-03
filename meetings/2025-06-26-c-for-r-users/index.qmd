@@ -1,0 +1,43 @@
+---
+title: "C for R Users"
+description: |
+  Why and how to learn C, as a way to contribute to base R
+author:
+  - name: Ella Kaye
+    url: https://ellakaye.co.uk
+date: 2025-06-26
+categories:
+  - talks
+  - base R
+  - R contribution
+image: woman_studying.jpg
+draft: false
+lightbox: true
+---
+
+## Overview
+
+Much of base R is written in C. As R users, we may encounter this code when debugging our own code. As R contributors, we may wish to propose patches to the C code if we discover a bug. In any case, learning a new language can be fun and rewarding!
+
+In this talk, I'll discuss why, as R users/programmers, we may want to learn C, and resources for doing so. I'll show examples of how C is used in the codebase of base R. I'll give an example of how, with only a little C knowledge, it was possible to add a new feature into the language (specifying colours with three-digit hex codes). Finally, I’ll discuss various initiatives from the R Contribution Working Group and show how you, too, can get involved in contributing to base R.
+
+## Event details
+
+**Event listing:** [Meet-up](https://www.meetup.com/warwickrug/events/308433900/){target="_blank"}
+
+**Date:** June 26th, 2025
+
+**Time:** 12:45
+
+**Location:** MB0.08, Mathematical Sciences Building, University of Warwick and online (register on Meetup for Teams link).
+
+## Resources
+
+* Slides: <https://ellakaye.github.io/c-for-r-users-2025>{target="_blank"} (opens in a new window)
+
+<iframe class="slide-deck ar16x9" src="https://ellakaye.github.io/c-for-r-users-2025/" title="Slides">
+</iframe>
+
+## About the speaker
+
+Ella is a Research Software Engineer at the University of Warwick, UK, and a Fellow of the [Software Sustainability Institute](https://software.ac.uk). She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project, in particular by fostering a larger and more diverse community of contributors to base R. She also runs [rainbowR](https://rainbowr.org), a community that connects, supports, and promotes LGBTQ+ people who code in R, and spreads awareness of LGBTQ+ issues through data-driven activism.
