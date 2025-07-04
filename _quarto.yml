@@ -35,6 +35,6 @@ website:
 format:
   html:
     theme: cosmo
-    css: css/wrug.scss
+    css: css/wrug.css
     toc: true
     
