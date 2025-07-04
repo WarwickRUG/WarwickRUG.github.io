@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-a98ec624fb63d9b712fc3a6f62e2b305.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -201,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 <li>GAM workshop for NHS-R Community Conference 2023 GitHub repo: <a href="https://github.com/chrismainey/GAMworkshop" class="uri">https://github.com/chrismainey/GAMworkshop</a></li>
 <li>Slides: <a href="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html" class="uri">https://chrismainey.github.io/GAMworkshop/GAMworkshop.html</a></li>
 </ul>
-<iframe class="slide-deck ar3x2" src="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html#1" title="Slides">
+<iframe class="slide-deck ar16x9" src="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html#1" title="Slides">
 </iframe>
 </section>
 <section id="about-the-speaker" class="level2">
@@ -216,7 +219,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="photos" class="level2">
 <h2 class="anchored" data-anchor-id="photos">Photos</h2>
-<p><img src="media/highres_517601369.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601370.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601040.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601041.jpeg" class="img-fluid" data-group="my-gallery"> <img src="media/highres_517601088.jpeg" class="img-fluid" data-group="my-gallery"></p>
+<p><a href="media/highres_517601369.jpeg" class="lightbox" data-gallery="my-gallery"><img src="media/highres_517601369.jpeg" class="img-fluid"></a></p>
+<p><a href="media/highres_517601370.jpeg" class="lightbox" data-gallery="my-gallery"><img src="media/highres_517601370.jpeg" class="img-fluid"></a></p>
+<p><a href="media/highres_517601040.jpeg" class="lightbox" data-gallery="my-gallery"><img src="media/highres_517601040.jpeg" class="img-fluid"></a></p>
+<p><a href="media/highres_517601041.jpeg" class="lightbox" data-gallery="my-gallery"><img src="media/highres_517601041.jpeg" class="img-fluid"></a></p>
+<p><a href="media/highres_517601088.jpeg" class="lightbox" data-gallery="my-gallery"><img src="media/highres_517601088.jpeg" class="img-fluid"></a></p>
 
 
 </section>
@@ -632,8 +639,40 @@ Models.”</span> November 26, 2023. <a href="https://warwickrug.github.io/meeti
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2023-11-23-fitting-wiggly-data/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/edit/main/meetings/2023-11-23-fitting-wiggly-data/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>

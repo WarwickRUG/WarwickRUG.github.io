@@ -56,18 +56,18 @@
     "text": "Event details\nEvent listing: Meet-up\nDate: June 26th, 2025\nTime: 12:45\nLocation: MB0.08, Mathematical Sciences Building, University of Warwick and online (register on Meetup for Teams link)."
   },
   {
-    "objectID": "meetings/2025-06-26-c-for-r-users/index.html#resources",
-    "href": "meetings/2025-06-26-c-for-r-users/index.html#resources",
-    "title": "C for R Users",
-    "section": "Resources",
-    "text": "Resources\n\nSlides: https://ellakaye.github.io/c-for-r-users-2025 (opens in a new window)"
-  },
-  {
     "objectID": "meetings/2025-06-26-c-for-r-users/index.html#about-the-speaker",
     "href": "meetings/2025-06-26-c-for-r-users/index.html#about-the-speaker",
     "title": "C for R Users",
     "section": "About the speaker",
     "text": "About the speaker\nElla is a Research Software Engineer at the University of Warwick, UK, and a Fellow of the Software Sustainability Institute. She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project, in particular by fostering a larger and more diverse community of contributors to base R. She also runs rainbowR, a community that connects, supports, and promotes LGBTQ+ people who code in R, and spreads awareness of LGBTQ+ issues through data-driven activism."
+  },
+  {
+    "objectID": "meetings/2025-06-26-c-for-r-users/index.html#resources",
+    "href": "meetings/2025-06-26-c-for-r-users/index.html#resources",
+    "title": "C for R Users",
+    "section": "Resources",
+    "text": "Resources\n\nSlides (opens in a new window)"
   },
   {
     "objectID": "meetings/2023-11-23-fitting-wiggly-data/index.html",
