@@ -1,0 +1,66 @@
+---
+title: "(More) Reproducible Data Analysis in R using {targets}"
+description: |
+  Learn how to structure workflows to make data analysis more reproducible in R.
+author:
+  - name: Saranjeet Kaur Bhogal
+    url: https://saranjeetkaur.github.io/About-Me/
+date: 2024-12-05
+categories:
+  - talks
+  - reproducibility
+image: targets.webp
+lightbox: true # N.B. need blank line between photos for this to work
+---
+
+## Overview
+
+Reproducibility of scientific research enables others including your future self to validate, extend, and build upon analytical results. This in turn, helps build confidence in the results of scientific analyses. However, reproducibility is not a binary concept, rather, there is a scale from less reproducible to more reproducible, where various tools and practices can help enhance it.
+
+The R package {targets}, developed and maintained by Will Landau, is a workflow management package designed to increase reproducibility in R based data analysis. The major features of {targets} include automation of workflows, caching of intermediate steps, batch creation of workflow steps, and parallelisation at the level of the workflow. These features not only help to reproduce scientific analysis, but also help you to tackle several other challenges in your research workflows. For example, it supports you to return to a project after working on something else and still be able to immediately pick up where you left off without confusion or trying to remember what you were doing. If you change the workflow, then you only have to re-run the parts that are affected by the change. It is also possible to scale up the workflow, to say, handle large datasets, without changing the underlying individual functions.
+
+This session will provide an introduction to using {targets} for reproducible data analysis in R. Participants will learn how to structure their workflows to make their data analysis more reproducible in R.
+
+## Event details
+
+**Event listing:** [Meetup](https://www.meetup.com/warwickrug/events/304705506/)
+
+**Date:** December 5th, 2024
+
+**Schedule:**
+
+- 11:30 - 12:00 Refreshments (in-person)
+- 12:00 - 13:00 Talk/demo (hybrid)
+- 13:00 - 14:00 Lunch (in-person)
+
+**Location:** MB0.07 Mathematical Sciences Building, University of Warwick (register on Meetup for Teams link)
+
+## About the speaker
+
+aranjeet Kaur Bhogal joined the Central Research Software Engineering team at Imperial as a Research Software Engineer in 2024. In 2023, she was selected an International Fellow of the Software Sustainability Institute. In 2021, the R Foundation funded her proposal to serve as a Technical Writer for the R Development Guide, helping to create and refine the guide. Later that year, she participated in Code for Science and Society's Digital Infrastructure Incubator to build a community around the R Development Guide. In 2022, she contributed to another significant update during the Google Season of Docs. She has presented this work at various conferences, including useR! 2021, LatinR 2021 (as an invited speaker), CarpentryCon 2022, useR! 2024, and RSLondonSouthEast 2024.
+
+Her academic background includes an MPhil in Statistics from University of Pune, where she researched the Nested Sampling algorithm (used to sample from complex, multi-modal distributions while also estimating the evidence). In 2020, she was selected for Google Summer of Code working on the algorithm in Julia (programming language). She presented this project at JuliaCon 2021 and PackagingCon 2021.
+
+Throughout her career, she has also been involved with various software engineering communities, including serving as a Subject Matter Expert for NASA TOPS' Open Science Tools and Resources Module. In 2021, she participated in the Open Life Science program (cohort-4), where she co-founded the Research Software Engineering (RSE) Asia Association. She has represented the RSE Asia community at events in Bhutan, Nepal, Sri Lanka (as Asia Pacific Advanced Network Fellow), and the UK. Recently, she has also graduated from CSSCE's Community Engagement Fundamentals course.
+
+## Resources
+
+- [Slides](https://saranjeetkaur.github.io/reproducible-analysis-targets/){target="_blank"} 
+- [GitHub](https://github.com/SaranjeetKaur/reproducible-analysis-targets)
+
+<iframe class="slide-deck ar16x9" src="https://saranjeetkaur.github.io/reproducible-analysis-targets/" title="Slides">
+</iframe>
+
+<!--
+
+## Photos
+
+Add after the event
+
+![](media/IMG1.jpeg){group="my-gallery"}
+
+![](media/IMG2.jpeg){group="my-gallery"}
+
+![](media/IMG3.jpeg){group="my-gallery"}
+
+-->
