@@ -1,18 +1,9 @@
 [
   {
-    "listing": "/about.html",
-    "items": [
-      "/people/carlos-camara.html",
-      "/people/chris-mainey.html",
-      "/people/ella-kaye.html",
-      "/people/heather-turner.html",
-      "/people/james-tripp.html"
-    ]
-  },
-  {
     "listing": "/meetings.html",
     "items": [
       "/meetings/2025-06-26-c-for-r-users/index.html",
+      "/meetings/2024-12-05-targets/index.html",
       "/meetings/2024-06-10-summer-bonanza/index.html",
       "/meetings/2023-11-23-fitting-wiggly-data/index.html",
       "/meetings/2023-05-16-interactive-data-visualisation/index.html",
@@ -28,6 +19,16 @@
       "/meetings/2017-02-02-dynamite-plunger-plots/index.html",
       "/meetings/2017-01-19-emojiplots/index.html",
       "/meetings/2017-01-19-intro-shiny/index.html"
+    ]
+  },
+  {
+    "listing": "/about.html",
+    "items": [
+      "/people/carlos-camara.html",
+      "/people/chris-mainey.html",
+      "/people/ella-kaye.html",
+      "/people/heather-turner.html",
+      "/people/james-tripp.html"
     ]
   }
 ]
