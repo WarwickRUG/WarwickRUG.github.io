@@ -23,7 +23,7 @@ For in-person attendees, the talk will be followed by pizza/salad and soft drink
 * GAM workshop for NHS-R Community Conference 2023 GitHub repo: <https://github.com/chrismainey/GAMworkshop>
 * Slides: <https://chrismainey.github.io/GAMworkshop/GAMworkshop.html>
 
-<iframe class="slide-deck ar3x2" src="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html#1" title="Slides">
+<iframe class="slide-deck ar16x9" src="https://chrismainey.github.io/GAMworkshop/GAMworkshop.html#1" title="Slides">
 </iframe>
 
 ## About the speaker
