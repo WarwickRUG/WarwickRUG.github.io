@@ -31,13 +31,14 @@ In this talk, I'll discuss why, as R users/programmers, we may want to learn C, 
 
 **Location:** MB0.08, Mathematical Sciences Building, University of Warwick and online (register on Meetup for Teams link).
 
+## About the speaker
+
+Ella is a Research Software Engineer at the University of Warwick, UK, and a Fellow of the [Software Sustainability Institute](https://software.ac.uk). She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project, in particular by fostering a larger and more diverse community of contributors to base R. She also runs [rainbowR](https://rainbowr.org), a community that connects, supports, and promotes LGBTQ+ people who code in R, and spreads awareness of LGBTQ+ issues through data-driven activism.
+
 ## Resources
 
-* Slides: <https://ellakaye.github.io/c-for-r-users-2025>{target="_blank"} (opens in a new window)
+* [Slides](https://ellakaye.github.io/c-for-r-users-2025){target="_blank"} (opens in a new window)
 
 <iframe class="slide-deck ar16x9" src="https://ellakaye.github.io/c-for-r-users-2025/" title="Slides">
 </iframe>
 
-## About the speaker
-
-Ella is a Research Software Engineer at the University of Warwick, UK, and a Fellow of the [Software Sustainability Institute](https://software.ac.uk). She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project, in particular by fostering a larger and more diverse community of contributors to base R. She also runs [rainbowR](https://rainbowr.org), a community that connects, supports, and promotes LGBTQ+ people who code in R, and spreads awareness of LGBTQ+ issues through data-driven activism.
