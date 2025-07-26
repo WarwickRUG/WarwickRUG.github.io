@@ -1,0 +1,40 @@
+---
+title: "How do you visualise data?"
+description: |
+  A study of data visualisation practices
+author:
+  - name: Maria Petrescu
+    url: https://warwick.ac.uk/fac/cross_fac/cim/people/maria-nicoleta-petrescu/
+date: 2024-04-22
+categories:
+  - workshop
+  - dataviz
+image: data_vis_banner.jpeg
+draft: false
+lightbox: true
+---
+
+## Workshop overview
+
+My name is Maria Petrescu and I am a doctoral researcher within CIM (the Centre for Interdisciplinary Methodologies) at the University of Warwick, supervised by Dr Greg McInerny (CIM, Warwick) and Prof João Porto de Albuquerque (University of Glasgow). My research project focuses on data visualisation practices, more specifically on how practitioners interact with their software tools.
+
+For my current case study, I have chosen to look at how practitioners and designers visualise data in R. To this end, I have prepared a few datasets and a set of tasks based on them. In this workshop, participants will be asked to do their best to complete said tasks and discuss the process.
+
+## Event details
+
+**Event listing:** [Meet-up](https://www.meetup.com/warwickrug/events/300447665/?eventOrigin=group_events_list){target="_blank"}
+
+**Date:** April 22, 2024
+
+**Time:** 14:00
+
+**Location:** B0.06, Centre for Interdisciplinary Methodologies, University of Warwick.
+
+## Resources
+
+Since this workshop is part of a research study, resources were shared directly with research participants.
+
+## More information
+
+For more information on this study, please contact <M.Petrescu@warwick.ac.uk>.
+
