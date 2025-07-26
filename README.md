@@ -7,41 +7,23 @@ Warwick R User Group website, created using [`Quarto`](https://quarto.org/).
 
 Some icons obtained from [Reshot](https://www.reshot.com/). 
 
-## Installation
-
-1. Clone this repo: `git clone git@github.com:WarwickRUG/WarwickRUG.github.io.git`
-2. Install `renv` if not already installed (instructions [here](https://rstudio.github.io/renv/index.html)).
-2. Run `renv::restore()` to restore the state of your project from `renv.lock`.
-
-## Updating packages
-
-1. Install packages as usual.
-2. Run `renv::snapshot()` to update `renv.lock`.
-3. Create a commit with `renv.lock` changes and push it to the repo.
-
 ## Updating website
 
 ### Content creation
 
-Add new blog posts
+Add new blog posts in the meetings folder, following previous examples./
 
+### Preview or render the website
 
+In RStudio, you can use the Render button to preview a particular page.
 
+Use Render Website on the Build pane or `quarto render` in the terminal to 
+build and preview the whole site
 
-### Rendering and deploying the website
+### Deploying the website
 
-TODO: <https://quarto.org/docs/publishing/github-pages.html>
-
-## Troubleshooting
-
-### Can't install a new package
-
-If facing issues installing packages from Windows, run this command. (more info [in `renv` documentation](https://rstudio.github.io/renv/articles/renv.html#downloads-1) and [in this discussion](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/6))
-
-```R
-Sys.setenv(RENV_DOWNLOAD_METHOD = "libcurl")
-```
-
+Commit and push your changes to GitHub, the website is deployed to GitHub 
+Pages automatically.
 
 ## Contributors ✨
 
