@@ -9,7 +9,7 @@ date: 2017-01-19
 categories:
   - talks
   - shiny
-image: https://www.rstudio.com/assets/img/og/shiny-og-fb.jpg
+image: https://raw.githubusercontent.com/rstudio/shiny/refs/heads/main/man/figures/logo.png
 ---
 
 ## Resources:
