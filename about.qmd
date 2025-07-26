@@ -28,13 +28,17 @@ We would like to thank former WRUG committee members (in alphabetical order):
 
 -   [**Aditi Shenvi**](https://ashenvi10.github.io/)
 
+-   [Chris Mainey](https://github.com/chrismainey)
+
 -   [**David Selby**](https://selbydavid.com/)
 
--   **Lewis Rendell**
+-   [James Tripp](https://github.com/jamestripp)
+
+-   [**Lewis Rendell**](https://www.linkedin.com/in/lewis-rendell-729a785a/)
 
 ## Support
 
-![R Consortium logo](https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/RConsortium_Horizontal_Pantone.png)
+![](media/RConsortium_logo.webp){fig-alt="R Consortium logo" width="333"}
 
 Warwick R User Group is supported by the [R Consortium](https://www.r-consortium.org/).
 

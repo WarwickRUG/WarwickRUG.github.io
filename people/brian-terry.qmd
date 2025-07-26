@@ -1,7 +1,7 @@
 ---
-title: "James Tripp"
+title: "Brian Terry"
 format: html
-image: https://avatars.githubusercontent.com/u/5781056?v=4
+image: ../media/brian_terry.jpg
 about:
   template: solana
   image-width: 10em
@@ -9,7 +9,6 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/jamestripp
-  
+      href: BrianTerry1
 editor: visual
 ---
