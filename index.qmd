@@ -16,7 +16,7 @@ about:
       url: https://www.meetup.com/WarwickRUG/events/
     - icon: envelope
       text: E-mail
-      url: mailto:warwick-rug@gaggle.email
+      url: mailto:warwick_rug_committee@livewarwickac.onmicrosoft.com
 
 ---
 
