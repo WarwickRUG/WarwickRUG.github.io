@@ -34,7 +34,9 @@ website:
         href: index.xml
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: cosmo
+      dark: solar
     css: css/wrug.css
     toc: true
     
