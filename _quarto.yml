@@ -4,6 +4,7 @@ project:
     - "*.qmd"
 
 website:
+  draft-mode: unlinked
   title: "Warwick R-User Group"
   image: "media/logo_small_white.png"
   site-url: https://warwickrug.github.io
