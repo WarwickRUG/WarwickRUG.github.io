@@ -1,99 +1,50 @@
 ---
-title: "Summer Bonanza: Warwick Branding | Marketing Analytics | Maps | Clinical Trials"
+title: "Two talks: {renv} for reproducibility & {rtables} for complex data tabulation"
 description: |
-  A bumper meeting with four talks!
+  A hybrid meeting with one remote and one in-person speaker!
 author:
-  - name: Ella Kaye
-    url: https://ellakaye.co.uk
-  - name: Jeremy Horne
-  - name: Carlos Cámara-Menoyo
-    url: https://www.carloscamara.es/en/
-  - name: Luke Ouma
-date: 2024-06-10
+  - name: Shannon Pileggi
+    url: https://www.pipinghotdata.com
+  - name: Gabe Becker
+    url: https://github.com/gmbecker
+date: 2025-09-04
 categories:
   - talks
-  - Warwick
-  - branding
-  - Quarto
-  - maps
-  - marketing analytics
-  - clinical trials
-image: featured.webp
-draft: false
+  - reproducibility
+  - reporting
+image: banner.jpeg
+draft: true
 lightbox: true
 ---
 
-This meet-up featured four talks!
+This meet-up featured two talks, with Shannon Pileggi joining remotely and Gabe Becker speaking in-person at Warwick University.
 
-## Ella Kaye (Statistics, Warwick) *Warwick-branded plots, presentations and websites using Quarto and R*
+## Shannon Pileggi (The Prostate Cancer Clinical Trials Consortium) *How to make {renv} actually work*
 
-In this talk, Ella presents three related projects:
+The {renv} package aims to help users create reproducible environments for R projects. In theory, this is great! In practice, restoring a package environment can be a frustrating process due to overlooked R configuration requirements. 
 
-- **warwickplots**: An R package with colour palettes and a ggplot2 theme
-  
-- **warwickpres**: A Quarto Revealjs extension for presentations
-
-- **warwickcourse**: A GitHub template for creating course/workshop websites with Quarto
-
-She lets people know they exist and what they look like. She gives a quick guide and demo on getting started using them and lets people know where to learn more. Most of all, she encourages people to use them!
+This talk helps people to better understand the source of environment restoration issues and learn strategies for successful maintenance of {renv}-backed projects.
 
 ### Resources
 
-**warwickplots**: [GitHub](https://github.com/Warwick-Stats-Resources/warwickplots), [documentation website](https://warwick-stats-resources.github.io/warwickplots)
-
-**warwickpres**: [GitHub](https://github.com/Warwick-Stats-Resources/warwickpres), [demonstration presentation](https://warwick-stats-resources.github.io/warwickpres)
-
-**warwickcourse**: [GitHub](https://github.com/Warwick-Stats-Resources/warwickcourse), [website template](https://warwick-stats-resources.github.io/warwickcourse), [full course built on template](https://warwick-stats-resources.github.io/r-packages-2024)
-
-Here's a link to the [slides](https://warwick-stats-resources.github.io/warwickbrand-talk){target="_blank"} in a new window. 
-
-Here are the slides embedded:
-
-<iframe class="slide-deck ar16x9" src="https://warwick-stats-resources.github.io/warwickbrand-talk" title="Slides">
-</iframe>
+To be added.
 
 ### About the speaker
 
-Ella is a Research Software Engineer in the Department of Statistics at the University of Warwick, UK. She works to increase sustainability and EDI (Equality, Diversity and Inclusion) in the R Project. She also runs [rainbowR](https://rainbowr.netlify.app), a community that supports, promotes and connects LGBTQ+ people who code in the R language.
+Shannon is an enthusiastic professional educator and statistical consultant with over ten years of experience collaborating on data analysis with diverse partners in industry, tech, public health, and clinical research. Her previous work experiences include supporting research on parasitic diseases at the CDC, contributing to curriculum development at the Institute for Quantitative Theory and Methods at Emory University, and instructing advanced programming and modeling courses at California Polytechnic State University, San Luis Obispo. She is currently a Data Scientist at [The Prostate Cancer Clinical Trials Consortium](http://pcctc.org/), housed under [Memorial Sloan Kettering Cancer Center](https://www.mskcc.org/), working remotely from home in Doylestown, PA.
 
-## Jeremy Horne (DataCove) *Does advertising work? How to measure the long-term impact of our marketing investments*
+Personal website: <https://www.pipinghotdata.com>
+
+## Gabe Becker (Freelance Developer) *rtables - A grammar for complex, multi-level data tabulations and analysis*
+
+Tables form a central component in both exploratory data analysis and formal reporting procedures across many industries. These tables are often complex in their conceptual structure and in the computations that generate their individual cell values. With {rtables}, we re-contextualize tables as a special case of the larger, well researched field of data visualization. We present a specialized, pipeable grammar for declaring table structure which maps to Wilkinson's Grammar of Graphics. This talk is a blend of our conceptual research and practical examples of what the 'rtables' framework can do.
 
 ### Resources
 
-- [slides](resources/Does-advertising-work.pptx)
-- [DataCove](https://datacove.co.uk)
+To be added
 
 ### About the speaker
 
-I am the founder of Datacove; your Data and analytics partner, specialising in customer analytics (unearthing your most valuable customers), marketing analytics (to maximise campaign performance) and process automation (automating your most time commanding tasks). I have 20 years of industry experience across a wide range of business sectors including charity, cyber security, fashion, financial services, FMCG, government, hospitality, legal, leisure and travel.
+Gabe is a statistical computing researcher with interests including reproducibility, improving and advancing the R computing language, and modeling and creating complex tables. He proposed the ALTREP framework recently added to R's internals and collaborated closely with R Core members on the design and implementation of this framework. Previously, Gabe was a Scientist at Genentech Research, where he performed novel research on how to improve the reproducibility, comparability, and ultimate usefulness of computational results in multi-analyst industrial research settings. Most recently, he created the 'rtables' framework for creating complex multi-faceted tables, which is currently used in production by two of the top five largest pharmaceutical companies in the industry. Gabe received his PhD in Statistics from the University of California at Davis.
 
-I'm an advanced user of the R programming language, so much so that people often call me "Mr R" and (in combination with my love of public speaking) I currently run R community user groups across the UK in Brighton, Bristol, Birmingham, London, Manchester and Portsmouth as well as organising EARL, the UK's biggest R & Python conference, which takes place over three days in September. Previous to running EARL, I have also spoken at the conference on five occasions in 2016, 2018, 2019, 2020 and 2022.
-
-## Carlos Cámara-Menoyo (Centre for Interdisciplinary Methodologies, Warwick) *Mapping and the geospatial ecosystem in R*
-
-
-### Resources
-
-Here's a link to the [slides](https://ccamara.github.io/wrug-geospatial-ecosystem-R/2024-06-wrug-mapping.html#/title-slide){target="_blank"} in a new window. 
-
-Here are the slides embedded:
-
-<iframe class="slide-deck ar16x9" src="https://ccamara.github.io/wrug-geospatial-ecosystem-R/2024-06-wrug-mapping.html#/title-slide" title="Slides">
-</iframe>
-
-### About the speaker
-
-I am a versatile, transdisciplinary and passionate person with a mixed technical and sociological background: I’ve worked as an architect, drupal developer, project manager, lecturer, researcher and as a data scientist, doing data munging and visualization using R and dealing with geospatial data using QGIS.
-
-My multiple research interests are framed within the Urban Studies, and more specifically around the commodifications between cities, technology and society. So far, I have focused on the topic of social and spatial inequities to find ways in which cities can be more sustainable and egalitarian, hence improving people’s well-being.
-
-## Luke Ouma (AstraZeneca) *Simulation studies in R: A case of developing novel/efficient methods for clinical trial design.*
-
-### Resources
-
-- [slides](resources/clinical-trials.pdf)
-- [GitHub](https://github.com/oondijo/multipleBiomarkers)
-
-### About the speaker
-
-Luke is a Medical statistician with experience in design of studies and analysis of data in different therapeutic areas. His research largely focuses on the development of novel Bayesian methods to improve the design and analysis of precision medicine trials—mainly Master protocols (umbrella, basket, and platform trials). Beyond this, he is keen on linking up with fellow researchers aiming to leverage the power of data to improve decision-making in health and care particularly in SSA, and developing the capacity of young statisticians through training (Msc, PhD, postdocs ).
+Personal GitHub: <https://github.com/gmbecker>
