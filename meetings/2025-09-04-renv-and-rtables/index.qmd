@@ -1,0 +1,50 @@
+---
+title: "Two talks: {renv} for reproducibility & {rtables} for complex data tabulation"
+description: |
+  A hybrid meeting with one remote and one in-person speaker!
+author:
+  - name: Shannon Pileggi
+    url: https://www.pipinghotdata.com
+  - name: Gabe Becker
+    url: https://github.com/gmbecker
+date: 2025-09-04
+categories:
+  - talks
+  - reproducibility
+  - reporting
+image: banner.jpeg
+draft: true
+lightbox: true
+---
+
+This meet-up featured two talks, with Shannon Pileggi joining remotely and Gabe Becker speaking in-person at Warwick University.
+
+## Shannon Pileggi (The Prostate Cancer Clinical Trials Consortium) *How to make {renv} actually work*
+
+The {renv} package aims to help users create reproducible environments for R projects. In theory, this is great! In practice, restoring a package environment can be a frustrating process due to overlooked R configuration requirements. 
+
+This talk helps people to better understand the source of environment restoration issues and learn strategies for successful maintenance of {renv}-backed projects.
+
+### Resources
+
+To be added.
+
+### About the speaker
+
+Shannon is an enthusiastic professional educator and statistical consultant with over ten years of experience collaborating on data analysis with diverse partners in industry, tech, public health, and clinical research. Her previous work experiences include supporting research on parasitic diseases at the CDC, contributing to curriculum development at the Institute for Quantitative Theory and Methods at Emory University, and instructing advanced programming and modeling courses at California Polytechnic State University, San Luis Obispo. She is currently a Data Scientist at [The Prostate Cancer Clinical Trials Consortium](http://pcctc.org/), housed under [Memorial Sloan Kettering Cancer Center](https://www.mskcc.org/), working remotely from home in Doylestown, PA.
+
+Personal website: <https://www.pipinghotdata.com>
+
+## Gabe Becker (Freelance Developer) *rtables - A grammar for complex, multi-level data tabulations and analysis*
+
+Tables form a central component in both exploratory data analysis and formal reporting procedures across many industries. These tables are often complex in their conceptual structure and in the computations that generate their individual cell values. With {rtables}, we re-contextualize tables as a special case of the larger, well researched field of data visualization. We present a specialized, pipeable grammar for declaring table structure which maps to Wilkinson's Grammar of Graphics. This talk is a blend of our conceptual research and practical examples of what the 'rtables' framework can do.
+
+### Resources
+
+To be added
+
+### About the speaker
+
+Gabe is a statistical computing researcher with interests including reproducibility, improving and advancing the R computing language, and modeling and creating complex tables. He proposed the ALTREP framework recently added to R's internals and collaborated closely with R Core members on the design and implementation of this framework. Previously, Gabe was a Scientist at Genentech Research, where he performed novel research on how to improve the reproducibility, comparability, and ultimate usefulness of computational results in multi-analyst industrial research settings. Most recently, he created the 'rtables' framework for creating complex multi-faceted tables, which is currently used in production by two of the top five largest pharmaceutical companies in the industry. Gabe received his PhD in Statistics from the University of California at Davis.
+
+Personal GitHub: <https://github.com/gmbecker>
