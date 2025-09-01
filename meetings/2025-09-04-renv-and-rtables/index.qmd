@@ -27,7 +27,7 @@ This talk helps people to better understand the source of environment restoratio
 
 ### Resources
 
-To be added.
+[Slides, tips and links](https://github.com/shannonpileggi/practical-renv)
 
 ### About the speaker
 
