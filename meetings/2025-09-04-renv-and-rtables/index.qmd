@@ -13,7 +13,6 @@ categories:
   - reproducibility
   - reporting
 image: banner.jpeg
-draft: true
 lightbox: true
 ---
 
@@ -29,6 +28,8 @@ This talk helps people to better understand the source of environment restoratio
 
 [Slides, tips and links](https://github.com/shannonpileggi/practical-renv)
 
+[renv website](https://rstudio.github.io/renv/)
+
 ### About the speaker
 
 Shannon is an enthusiastic professional educator and statistical consultant with over ten years of experience collaborating on data analysis with diverse partners in industry, tech, public health, and clinical research. Her previous work experiences include supporting research on parasitic diseases at the CDC, contributing to curriculum development at the Institute for Quantitative Theory and Methods at Emory University, and instructing advanced programming and modeling courses at California Polytechnic State University, San Luis Obispo. She is currently a Data Scientist at [The Prostate Cancer Clinical Trials Consortium](http://pcctc.org/), housed under [Memorial Sloan Kettering Cancer Center](https://www.mskcc.org/), working remotely from home in Doylestown, PA.
@@ -41,7 +42,7 @@ Tables form a central component in both exploratory data analysis and formal rep
 
 ### Resources
 
-To be added
+[rtables website](https://insightsengineering.github.io/rtables/)
 
 ### About the speaker
 
