@@ -1,5 +1,7 @@
 ---
 title: "Warwick R User Group"
+aliases:
+  - /wrug_website/index.html
 # listing: posts
 image: "media/logo_small.png"
 about:
