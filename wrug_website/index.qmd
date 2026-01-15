@@ -1,0 +1,8 @@
+---
+title: "Redirecting…"
+format: html
+execute: false
+html-meta:
+  refresh: "0; url=https://warwickrug.github.io/"
+  robots: noindex
+---
