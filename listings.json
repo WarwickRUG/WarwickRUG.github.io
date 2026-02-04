@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/about.html",
+    "items": [
+      "/people/brian-terry.html",
+      "/people/carlos-camara.html",
+      "/people/ella-kaye.html",
+      "/people/heather-turner.html",
+      "/people/xinran-gao.html"
+    ]
+  },
+  {
     "listing": "/meetings.html",
     "items": [
       "/meetings/2026-02-16-llms-r/index.html",
@@ -23,15 +33,6 @@
       "/meetings/2017-02-02-dynamite-plunger-plots/index.html",
       "/meetings/2017-01-19-emojiplots/index.html",
       "/meetings/2017-01-19-intro-shiny/index.html"
-    ]
-  },
-  {
-    "listing": "/about.html",
-    "items": [
-      "/people/brian-terry.html",
-      "/people/carlos-camara.html",
-      "/people/ella-kaye.html",
-      "/people/heather-turner.html"
     ]
   }
 ]
