@@ -23,10 +23,10 @@ editor: visual
 ## Bio
 Sociophonetician and PhD researcher working at the intersection of linguistics and data analysis.
 
-**Areas of Interest:** sociolinguistics, phonetics, computational lingusitics, language variation
+**Areas of Interest:** Sociolinguistics, Phonetics, Computational Lingusitics, Language Variation
 
 ## Project
 
-- [FECARE] (https://warwick.ac.uk/research/research-culture-at-warwick/fecare/)
+-   [FECARE](https://warwick.ac.uk/research/research-culture-at-warwick/fecare/)
 
 
