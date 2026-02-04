@@ -37,5 +37,6 @@ Sociophonetician and PhD researcher working at the intersection of linguistics a
 
 -   [CS918 Natural Language Processing](https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs918)
 
-## Project [FECARE] (https://warwick.ac.uk/research/research-culture-at-warwick/fecare/)
+## Project
+[FECARE] (https://warwick.ac.uk/research/research-culture-at-warwick/fecare/)
 
