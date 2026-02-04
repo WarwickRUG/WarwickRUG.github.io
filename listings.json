@@ -1,16 +1,8 @@
 [
   {
-    "listing": "/about.html",
-    "items": [
-      "/people/brian-terry.html",
-      "/people/carlos-camara.html",
-      "/people/ella-kaye.html",
-      "/people/heather-turner.html"
-    ]
-  },
-  {
     "listing": "/meetings.html",
     "items": [
+      "/meetings/2026-02-16-llms-r/index.html",
       "/meetings/2025-09-04-renv-and-rtables/index.html",
       "/meetings/2025-06-26-c-for-r-users/index.html",
       "/meetings/2024-12-05-targets/index.html",
@@ -31,6 +23,15 @@
       "/meetings/2017-02-02-dynamite-plunger-plots/index.html",
       "/meetings/2017-01-19-emojiplots/index.html",
       "/meetings/2017-01-19-intro-shiny/index.html"
+    ]
+  },
+  {
+    "listing": "/about.html",
+    "items": [
+      "/people/brian-terry.html",
+      "/people/carlos-camara.html",
+      "/people/ella-kaye.html",
+      "/people/heather-turner.html"
     ]
   }
 ]
