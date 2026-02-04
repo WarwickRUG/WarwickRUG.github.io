@@ -1,0 +1,55 @@
+---
+title: "Can LLMs Actually Analyse Your Data?"
+description: |
+  Practical uses of LLMs for working with data in R.
+author:
+  - name: Nic Crane
+    url: https://www.linkedin.com/in/niccrane/
+date: 2026-02-16
+categories:
+  - talks
+image: querychat.png
+draft: false
+lightbox: true # N.B. need blank line between photos for this to work
+---
+
+## Overview
+
+LLMs are increasingly being woven into data analysis workflows, and it's worth asking: where do they genuinely help, and where do they quietly get things wrong? This talk looks at practical uses of LLMs for working with data in R, including Posit's recently released [`{querychat}`](https://github.com/posit-dev/querychat) package, which lets you query data using natural language. We'll cover what works well, what to watch out for, and what's actually worth adopting right now.
+
+## Event details
+
+**Event listing:** [Meetup](https://www.meetup.com/warwickrug/events/313186844/?eventOrigin=group_events_list)
+
+**Date:** Monday, Feb 16
+
+**Time:** 5:00 PM to 6:00 PM GMT
+
+**Location:** Online (please [register RVP on Meetup](https://www.meetup.com/warwickrug/events/313186844/?eventOrigin=group_events_list) for Teams link)
+
+## About the speaker
+
+Nic Crane is an R educator and consultant who loves to experiment with LLMs and AI.  They are also one of the maintainers of the Arrow R package and co-author of Scaling Up with R and Arrow.
+
+<!--
+## Resources
+
+- [Slides](URL){target="_blank"} [or add pptx/pdf to resources directory]
+
+<iframe class="slide-deck ar16x9" src="URL" title="Slides">
+</iframe>
+-->
+
+<!--
+
+## Photos
+
+Add after the event
+
+![](media/IMG1.jpeg){group="my-gallery"}
+
+![](media/IMG2.jpeg){group="my-gallery"}
+
+![](media/IMG3.jpeg){group="my-gallery"}
+
+-->
