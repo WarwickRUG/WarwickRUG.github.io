@@ -1,0 +1,41 @@
+---
+title: "Xinran Gao"
+format: html
+image: ../media/xinran_gao.jpg
+about:
+  template: solana
+  image-width: 10em
+  image-shape: round
+  # image-alt: "Xinran Gao holding a bunch of flowers. Asian female in her 20s"
+  links:
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/xinrangaoxg/
+    - icon: envelope
+      text: E-mail
+      href: mailto:xinran.gao@warwick.ac.uk
+    - icon: globe
+      text: Website
+      href: https://warwick.ac.uk/fac/soc/al/people/x-gao/
+  
+editor: visual
+---
+## Bio
+Sociophonetician and PhD researcher working at the intersection of linguistics and data analysis.
+
+**Areas of Interest:** sociolinguistics, phonetics, computational lingusitics, language variation
+
+## Gratuate Teaching Assistant
+
+-   [ET229 Phonetics and Phonology](https://warwick.ac.uk/fac/soc/al/study/undergraduate/modules/et229)
+
+-   [ET310 Artificial Intelligence and Applied Linguistics](https://warwick.ac.uk/fac/soc/al/study/undergraduate/modules/et310)
+
+-   [IM942 Visualisation Foundations](https://warwick.ac.uk/fac/cross_fac/cim/apply-to-study/cross-disciplinary-postgraduate-modules/im942-visualisation-found/)
+
+-   [CS910/CS430 Foundations of Data Analystics](https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs910/)
+
+-   [CS918 Natural Language Processing](https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs918)
+
+## Project [FECARE] (https://warwick.ac.uk/research/research-culture-at-warwick/fecare/)
+
