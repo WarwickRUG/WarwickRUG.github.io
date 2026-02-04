@@ -9,6 +9,7 @@ date: 2024-12-05
 categories:
   - talks
   - reproducibility
+  - data
 image: targets.webp
 lightbox: true # N.B. need blank line between photos for this to work
 ---

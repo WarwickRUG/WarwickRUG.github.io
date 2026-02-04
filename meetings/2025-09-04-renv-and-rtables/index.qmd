@@ -12,6 +12,7 @@ categories:
   - talks
   - reproducibility
   - reporting
+  - data
 image: banner.jpeg
 lightbox: true
 ---

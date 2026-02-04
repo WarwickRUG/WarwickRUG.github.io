@@ -8,6 +8,8 @@ author:
 date: 2026-02-16
 categories:
   - talks
+  - LLMs
+  - data
 image: querychat.png
 draft: false
 lightbox: true # N.B. need blank line between photos for this to work

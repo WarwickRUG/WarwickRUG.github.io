@@ -16,6 +16,7 @@ categories:
   - branding
   - Quarto
   - maps
+  - dataviz
   - marketing analytics
   - clinical trials
 image: featured.webp
