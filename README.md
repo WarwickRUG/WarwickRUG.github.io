@@ -1,6 +1,6 @@
 # Warwick R User Group Website
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Warwick R User Group website, created using [`Quarto`](https://quarto.org/).
@@ -41,6 +41,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://ashenvi10.github.io/"><img src="https://avatars.githubusercontent.com/u/39489147?v=4?s=100" width="100px;" alt="Aditi Shenvi"/><br /><sub><b>Aditi Shenvi</b></sub></a><br /><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/commits?author=ashenvi10" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://warwick.ac.uk/fac/arts/research/digitalhumanities/team/"><img src="https://avatars.githubusercontent.com/u/5781056?v=4?s=100" width="100px;" alt="James Tripp"/><br /><sub><b>James Tripp</b></sub></a><br /><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/commits?author=jamestripp" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://ellakaye.co.uk"><img src="https://avatars.githubusercontent.com/u/7222491?v=4?s=100" width="100px;" alt="Ella Kaye"/><br /><sub><b>Ella Kaye</b></sub></a><br /><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/commits?author=EllaKaye" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/xxxrg"><img src="https://avatars.githubusercontent.com/u/133960079?v=4?s=100" width="100px;" alt="Xinran Gao"/><br /><sub><b>Xinran Gao</b></sub></a><br /><a href="https://github.com/WarwickRUG/WarwickRUG.github.io/commits?author=xxxrg" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
