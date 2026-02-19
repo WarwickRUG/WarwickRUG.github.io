@@ -10,7 +10,7 @@ categories:
   - talks
   - LLMs
   - data
-image: querychat.png
+image: slides-screenshot.png
 draft: false
 lightbox: true # N.B. need blank line between photos for this to work
 ---
@@ -31,17 +31,23 @@ LLMs are increasingly being woven into data analysis workflows, and it's worth a
 
 ## About the speaker
 
-Nic Crane is an R educator and consultant who loves to experiment with LLMs and AI.  They are also one of the maintainers of the Arrow R package and co-author of Scaling Up with R and Arrow.
+<img src="nic.png" align="right" width="200">[Nic Crane](https://www.linkedin.com/in/niccrane/) is an R educator and consultant who loves to experiment with LLMs and AI. They are also one of the maintainers of the Arrow R package and co-author of [Scaling Up with R and Arrow](https://arrowrbook.com/).
 
-<!--
 ## Resources
 
+[Session's slides (PDF)](llms_data_analysis.pdf)
+
+```{=html}
+
+<!--
 - [Slides](URL){target="_blank"} [or add pptx/pdf to resources directory]
 
 <iframe class="slide-deck ar16x9" src="URL" title="Slides">
 </iframe>
 -->
+```
 
+```{=html}
 <!--
 
 ## Photos
@@ -55,3 +61,4 @@ Add after the event
 ![](media/IMG3.jpeg){group="my-gallery"}
 
 -->
+```
