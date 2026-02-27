@@ -26,11 +26,11 @@ Everyone is welcome, regardless of R programming experience, from across or outs
 
 We would like to thank former WRUG committee members (in alphabetical order):
 
--   [**Aditi Shenvi**](https://ashenvi10.github.io/)
+-   [Aditi Shenvi](https://ashenvi10.github.io/)
 
 -   [Chris Mainey](https://github.com/chrismainey)
 
--   [**David Selby**](https://selbydavid.com/)
+-   [David Selby](https://selbydavid.com/)
 
 -   [Ella Kaye](https://ellakaye.co.uk)
 
@@ -38,7 +38,7 @@ We would like to thank former WRUG committee members (in alphabetical order):
 
 -   [James Tripp](https://github.com/jamestripp)
 
--   [**Lewis Rendell**](https://www.linkedin.com/in/lewis-rendell-729a785a/)
+-   [Lewis Rendell](https://www.linkedin.com/in/lewis-rendell-729a785a/)
 
 ## Support
 
