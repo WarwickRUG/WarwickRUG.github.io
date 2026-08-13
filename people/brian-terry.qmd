@@ -1,6 +1,7 @@
 ---
 title: "Brian Terry"
 format: html
+draft: true
 image: ../media/brian_terry.jpg
 about:
   template: solana
