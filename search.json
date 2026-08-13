@@ -144,7 +144,7 @@
     "href": "meetings/2022-07-14-dependencies/index.html",
     "title": "Managing R script dependencies: automagic and renv",
     "section": "",
-    "text": "At the end of our previous presentation by Iain Emsley on code review we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.\nIn order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box {automagic} and the more complex, yet backed up by RStudio, {renv}\nAt the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.\n\nYou can check the standalone Slides here and Source code\n\n\n\nCitationBibTeX citation:@online{cámara-menoyo2022,\n  author = {Cámara-Menoyo, Carlos},\n  title = {Managing {R} Script Dependencies: Automagic and Renv},\n  date = {2022-07-14},\n  url = {https://warwickrug.github.io/meetings/2022-07-14-dependencies/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCámara-Menoyo, Carlos. 2022. “Managing R Script Dependencies:\nAutomagic and Renv.” July 14, 2022. https://warwickrug.github.io/meetings/2022-07-14-dependencies/."
+    "text": "At the end of our previous presentation by Iain Emsley on code review we had an interesting discussion on the need for reproducibility. This talk introduces the concept of reproducibility and focuses on one of it’s many facets: that of managing R script’s dependencies.\nIn order to do so, two different methods will be presented, compared and discussed: the simple yet works-out-of-the-box {automagic} and the more complex, yet backed up by RStudio, {renv}\nAt the end of the session, points in common as well as limitations will be highlighted, hopefully leading to a discussion and opening the door for the second talk of the reproducibility series.\n\nYou can check the standalone Slides here and Source code\n\n\n\nCitationBibTeX citation:@online{cámara-menoyo2022,\n  author = {Cámara-Menoyo, Carlos},\n  title = {Managing {R} Script Dependencies: Automagic and Renv},\n  date = {2022-07-14},\n  url = {https://warwickrug.github.io/meetings/2022-07-14-dependencies/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCámara-Menoyo, Carlos. 2022. “Managing R Script Dependencies:\nAutomagic and Renv.” July 14. https://warwickrug.github.io/meetings/2022-07-14-dependencies/."
   },
   {
     "objectID": "meetings/2022-05-17-code-review/index.html",
@@ -235,7 +235,7 @@
     "href": "about.html#committee",
     "title": "About us",
     "section": "Committee",
-    "text": "Committee\n\n\n\n\n\n\n\n\n\n\nBrian Terry\n\n\n\n\n\n\n\n\n\n\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\nXinran Gao\n\n\n\n\n\nNo matching items\n\n\nFormer members\nWe would like to thank former WRUG committee members (in alphabetical order):\n\nAditi Shenvi\nChris Mainey\nDavid Selby\nElla Kaye\nHeather Turner\nJames Tripp\nLewis Rendell"
+    "text": "Committee\n\n\n\n\n\n\n\n\n\n\nCarlos Cámara-Menoyo\n\n\n\n\n\n\n\n\n\n\n\n\nXinran Gao\n\n\n\n\n\nNo matching items\n\n\nFormer members\nWe would like to thank former WRUG committee members (in alphabetical order):\n\nAditi Shenvi\nChris Mainey\nDavid Selby\nElla Kaye\nHeather Turner\nJames Tripp\nLewis Rendell"
   },
   {
     "objectID": "about.html#support",
@@ -298,7 +298,7 @@
     "href": "meetings/2022-07-02-welcome/index.html",
     "title": "Welcome to Warwick R User Group",
     "section": "",
-    "text": "After some time without much activity, we’re back with plenty of ideas!\n\n\n\nCitationBibTeX citation:@online{turner2022,\n  author = {Turner, Heather and Tripp, James and Cámara, Carlos},\n  title = {Welcome to {Warwick} {R} {User} {Group}},\n  date = {2022-07-02},\n  url = {https://warwickrug.github.io/meetings/2022-07-02-welcome/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nTurner, Heather, James Tripp, and Carlos Cámara. 2022. “Welcome to\nWarwick R User Group.” July 2, 2022. https://warwickrug.github.io/meetings/2022-07-02-welcome/."
+    "text": "After some time without much activity, we’re back with plenty of ideas!\n\n\n\nCitationBibTeX citation:@online{turner2022,\n  author = {Turner, Heather and Tripp, James and Cámara, Carlos},\n  title = {Welcome to {Warwick} {R} {User} {Group}},\n  date = {2022-07-02},\n  url = {https://warwickrug.github.io/meetings/2022-07-02-welcome/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nTurner, Heather, James Tripp, and Carlos Cámara. 2022. “Welcome to\nWarwick R User Group.” July 2. https://warwickrug.github.io/meetings/2022-07-02-welcome/."
   },
   {
     "objectID": "meetings/2022-09-15-R-and-Docker/index.html",
