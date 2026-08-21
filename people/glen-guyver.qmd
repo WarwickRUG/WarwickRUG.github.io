@@ -1,0 +1,23 @@
+---
+title: "Glen Guyver"
+format: html
+image: ../media/glen_guyver.jpg
+about:
+  template: solana
+  image-width: 10em
+  image-shape: round
+  # image-alt: "Glen Guyver smiling. He's a white man in his early 30's with dark hair and brown eyes."
+  links:
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/glenguyver/
+    - icon: envelope
+      text: E-mail
+      href: mailto:glen.guyver-fletcher@warwick.ac.uk
+  
+editor: visual
+---
+
+## Bio
+
+Mathematical epidemiologist of livestock diseases - working on Foot-and-Mouth Disease (Disease) and Avian Influenza in cattle.
