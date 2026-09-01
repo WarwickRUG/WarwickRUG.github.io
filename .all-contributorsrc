@@ -72,6 +72,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "gguyver",
+      "name": "Glen Guyver-Fletcher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35695913?v=4",
+      "profile": "https://github.com/gguyver",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
